@@ -100,15 +100,15 @@ const History: React.FC = () => {
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
                   <div className="text-3xl font-bold text-indigo-600">? - 1946</div>
-                  <div className="text-gray-500 text-sm">Plebania</div>
+                  <div className="text-gray-500 text-sm">{t('history.period1')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-indigo-600">1946 - 2020</div>
-                  <div className="text-gray-500 text-sm">Historia Upadku</div>
+                  <div className="text-gray-500 text-sm">{t('history.period2')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-indigo-600">2024</div>
-                  <div className="text-gray-500 text-sm">Nowe Życie</div>
+                  <div className="text-gray-500 text-sm">{t('history.period3')}</div>
                 </div>
               </div>
             </div>

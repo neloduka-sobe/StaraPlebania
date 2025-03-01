@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Mountain, Bike, Fence, Snowflake, Footprints, Landmark, Castle, School } from 'lucide-react';
+import { Mountain, Bike, Fence, Snowflake, Footprints, Landmark } from 'lucide-react';
 
 const Location: React.FC = () => {
   const { t } = useTranslation();
