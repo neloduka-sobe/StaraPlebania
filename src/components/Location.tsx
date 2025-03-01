@@ -96,26 +96,6 @@ const Location: React.FC = () => {
               </div>
             </motion.div>
             
-            {/* Distances */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <h3 className="text-2xl font-bold mb-4">{t('location.attractions')}</h3>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                {distances.map((item, index) => (
-                  <div key={index} className="flex items-center py-3 border-b last:border-b-0">
-                    <div className="text-indigo-600 mr-4">{item.icon}</div>
-                    <div>
-                      <h4 className="font-semibold">{item.title}</h4>
-                      <p className="text-gray-500">{item.info}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>

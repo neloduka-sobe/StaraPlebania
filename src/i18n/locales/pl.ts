@@ -42,13 +42,7 @@ export default {
     horses: 'Jazda Konna',
     skiing: 'Stoki Narciarskie',
     running: 'Trasy Biegowe',
-    monuments: 'Zabytki',
-    attractions: 'Polecane atrakcje',
-    niesytno: 'Zamek Niesytno',
-    bolkow: 'Zamek Bolków',
-    sniezka: 'Śnieżka',
-    trojgarb: 'Trójgarb',
-    miedzianka: 'Miedzianka'
+    monuments: 'Zabytki'
   },
   
   // History section
