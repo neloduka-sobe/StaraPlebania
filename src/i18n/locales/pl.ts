@@ -54,10 +54,10 @@ export default {
   // History section
   history: {
     title: 'Nasza historia',
-    subtitle: 'Budynek z charakterem',
-    paragraph1: 'Built in 1923, our building has a rich history that reflects the character of the region. Originally constructed as a family residence, it was converted into a small hotel in the 1950s.',
-    paragraph2: 'In 2010, we completely renovated the building while preserving its historical charm and architectural details. Each apartment has been thoughtfully designed to offer modern comfort while honoring the building\'s heritage.',
-    paragraph3: 'Today, we pride ourselves on providing a unique accommodation experience that connects guests with the history and culture of our area while offering all the amenities modern travelers expect.'
+    subtitle: 'Budynek z historią i charakterem',
+    paragraph1: 'Sami nie wiemy kiedy zaczyna się historia Starej Plebanii. Wiadomo natomiast, że do roku 1946 budynek pełnił rolę miejscowej plebanii, w której mieszkał pastor wraz z rodziną. Historię poprzednich mieszkańców poznaliśmy z ust syna ostaniego pastora - zainspirowała nas ona do tchnięcia życia w to piękne miejsce.',
+    paragraph2: 'Od 1946 roku budynek grał różnorakie role, od domu sióstr zakonnych, poprzez szkołę dla miejscowej młodzieży, sklep po mieszkania socjalne. Budynek był kiedyś nawet magazynem soli drogowej. Nie wspominając o tym, jak raz prawie spłonął. Przez te wszystkie lata powoli tracił swój pierwotny urok i popadał w ruinę',
+    paragraph3: 'Słysząc historię tego domu, jak i całej okolicy postanowiliśmy tchnąć nowe życie w te zmęczone mury - niewiele poza nimi zostało. Podjęliśmy się misji przywrócenia Starej Plebanii do świetności. Tak oto czytają Państwo ten opis i na własną rękę mogą jak my lata temu odkryć piękno i tajemniczość tego miejsca.'
   },
   
   // Contact form

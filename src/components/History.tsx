@@ -93,22 +93,22 @@ const History: React.FC = () => {
               
               <div className="flex items-center">
                 <div className="h-px flex-1 bg-gray-200"></div>
-                <span className="px-4 text-gray-500 text-sm">1923 - 2023</span>
+                <span className="px-4 text-gray-500 text-sm">? - 2025</span>
                 <div className="h-px flex-1 bg-gray-200"></div>
               </div>
               
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-indigo-600">1923</div>
-                  <div className="text-gray-500 text-sm">Built</div>
+                  <div className="text-3xl font-bold text-indigo-600">? - 1946</div>
+                  <div className="text-gray-500 text-sm">Plebania</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-indigo-600">1950</div>
-                  <div className="text-gray-500 text-sm">Hotel</div>
+                  <div className="text-3xl font-bold text-indigo-600">1946 - 2020</div>
+                  <div className="text-gray-500 text-sm">Historia Upadku</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-indigo-600">2010</div>
-                  <div className="text-gray-500 text-sm">Renovated</div>
+                  <div className="text-3xl font-bold text-indigo-600">2024</div>
+                  <div className="text-gray-500 text-sm">Nowe Życie</div>
                 </div>
               </div>
             </div>
