@@ -15,14 +15,6 @@ const Location: React.FC = () => {
     { icon: <Snowflake size={24} />, title: t('location.skiing'), distance: '20km' },
   ];
 
-  const distances = [
-    { icon: <Castle size={24} />, title: t('location.niesytno'), info: '3km' },
-    { icon: <Castle size={24} />, title: t('location.bolkow'), info: '100m' },
-    { icon: <Mountain size={24} />, title: t('location.sniezka'), info: '25km' },
-    { icon: <Mountain size={24} />, title: t('location.trojgarb'), info: '25km' },
-    { icon: <School size={24} />, title: t('location.miedzianka'), info: '25km' },
-  ];
-
   return (
     <section id="location" className="py-20">
       <div className="container mx-auto px-4">

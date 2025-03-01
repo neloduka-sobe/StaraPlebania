@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Users, DotSquare as SquareFootage, Euro, ChevronRight } from 'lucide-react';
+import { Users, DotSquare as SquareFootage, ChevronRight } from 'lucide-react';
 import { Apartment } from '../types';
 import ApartmentGallery from './ApartmentGallery';
 

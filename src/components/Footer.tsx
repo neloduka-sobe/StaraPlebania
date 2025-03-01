@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
