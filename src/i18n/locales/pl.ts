@@ -49,7 +49,7 @@ export default {
   // History section
   history: {
     title: 'Nasza historia',
-    subtitle: 'A building with character',
+    subtitle: 'Budynek z charakterem',
     paragraph1: 'Built in 1923, our building has a rich history that reflects the character of the region. Originally constructed as a family residence, it was converted into a small hotel in the 1950s.',
     paragraph2: 'In 2010, we completely renovated the building while preserving its historical charm and architectural details. Each apartment has been thoughtfully designed to offer modern comfort while honoring the building\'s heritage.',
     paragraph3: 'Today, we pride ourselves on providing a unique accommodation experience that connects guests with the history and culture of our area while offering all the amenities modern travelers expect.'

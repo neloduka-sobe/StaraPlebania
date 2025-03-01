@@ -4,11 +4,11 @@ export const apartments: Apartment[] = [
   {
     id: 1,
     name: 'Apartament nr 1',
-    description: 'A spacious apartment with stunning mountain views, perfect for couples or solo travelers.',
-    price: 450,
-    capacity: 4,
+    description: 'Przestronny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+    price: 250,
+    capacity: 2,
     size: 35,
-    amenities: ['Wi-Fi', 'Kitchen', 'Air conditioning', 'Private bathroom', 'TV'],
+    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne', 'Kuchenka Mikrofalowa'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
@@ -33,11 +33,11 @@ export const apartments: Apartment[] = [
   {
     id: 2,
     name: 'Apartament nr 2',
-    description: 'A cozy apartment with direct access to our beautiful garden, ideal for nature lovers.',
+    description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
     price: 450,
     capacity: 4,
     size: 35,
-    amenities: ['Wi-Fi', 'Kitchen', 'Garden access', 'Private bathroom', 'Workspace'],
+    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Zmywarka', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
@@ -62,11 +62,11 @@ export const apartments: Apartment[] = [
   {
     id: 3,
     name: 'Apartament nr 3',
-    description: 'A modern loft-style apartment with urban design elements, perfect for digital nomads.',
+    description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
     price: 450,
     capacity: 4,
     size: 35,
-    amenities: ['Wi-Fi', 'Full kitchen', 'Air conditioning', 'Private bathroom', 'Smart TV', 'Workspace'],
+    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688',
@@ -91,11 +91,11 @@ export const apartments: Apartment[] = [
   {
     id: 4,
     name: 'Apartament nr 4',
-    description: 'A spacious apartment designed for families, with separate bedroom and plenty of space.',
+    description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
     price: 450,
     capacity: 4,
     size: 35,
-    amenities: ['Wi-Fi', 'Full kitchen', 'Air conditioning', 'Private bathroom', 'TV', 'Washing machine'],
+    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb',
@@ -120,11 +120,11 @@ export const apartments: Apartment[] = [
   {
     id: 5,
     name: 'Apartament nr 5',
-    description: 'A compact and affordable studio apartment, perfect for budget travelers.',
+    description: 'Przestronny pokój dwuosobowy z własną łazienką i aneksem kuchennym.',
     price: 250,
     capacity: 2,
     size: 25,
-    amenities: ['Wi-Fi', 'Kitchenette', 'Private bathroom', 'TV'],
+    amenities: ['Wi-Fi', 'Prywatna Łazienka', 'Aneks Kuchenny', 'Pralka', 'Kuchenka Mikrofalowa', 'Kuchenka Elektryczna', 'Czajnik', 'Przybory Kuchenne'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1630699144867-37acec97df5a',
@@ -149,11 +149,11 @@ export const apartments: Apartment[] = [
   {
     id: 6,
     name: 'Apartament nr 6',
-    description: 'Our premium penthouse apartment with panoramic views and luxury amenities.',
+    description: 'Przestronny pokój dwuosobowy z własną łazienką i aneksem kuchennym.',
     price: 250,
     capacity: 2,
     size: 25,
-    amenities: ['Wi-Fi', 'Full kitchen', 'Air conditioning', 'Private bathroom', 'Smart TV', 'Terrace', 'Premium furniture'],
+    amenities: ['Wi-Fi', 'Prywatna Łazienka', 'Czajnik', 'Zestaw do herbaty'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
