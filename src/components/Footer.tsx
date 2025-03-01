@@ -12,26 +12,23 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Mountain View Hostel</h3>
+            <h3 className="text-2xl font-bold mb-4">Stara Plebania</h3>
             <p className="text-gray-400 mb-4">
-              Your perfect stay in the heart of nature.
+              Nocleg dla aktywnych w sercu Kaczaw
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/staraplebania/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/people/Stara-Plebania/61559207286890/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
           
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4">Napisz do nas!</h3>
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
@@ -50,7 +47,7 @@ const Footer: React.FC = () => {
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4">Nawigacja</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#home" className="text-gray-400 hover:text-white transition-colors">
@@ -82,7 +79,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Mountain View Hostel. {t('footer.rights')}.</p>
+          <p>&copy; {currentYear} Stara Plebania {t('footer.rights')}.</p>
         </div>
       </div>
     </footer>
