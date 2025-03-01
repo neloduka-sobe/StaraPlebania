@@ -3,10 +3,10 @@ import { Apartment } from '../types';
 export const apartments: Apartment[] = [
   {
     id: 1,
-    name: 'Mountain View Suite',
+    name: 'Apartament nr 1',
     description: 'A spacious apartment with stunning mountain views, perfect for couples or solo travelers.',
-    price: 85,
-    capacity: 2,
+    price: 450,
+    capacity: 4,
     size: 35,
     amenities: ['Wi-Fi', 'Kitchen', 'Air conditioning', 'Private bathroom', 'TV'],
     images: [
@@ -32,11 +32,11 @@ export const apartments: Apartment[] = [
   },
   {
     id: 2,
-    name: 'Garden Retreat',
+    name: 'Apartament nr 2',
     description: 'A cozy apartment with direct access to our beautiful garden, ideal for nature lovers.',
-    price: 75,
-    capacity: 2,
-    size: 30,
+    price: 450,
+    capacity: 4,
+    size: 35,
     amenities: ['Wi-Fi', 'Kitchen', 'Garden access', 'Private bathroom', 'Workspace'],
     images: [
       {
@@ -61,11 +61,11 @@ export const apartments: Apartment[] = [
   },
   {
     id: 3,
-    name: 'Urban Loft',
+    name: 'Apartament nr 3',
     description: 'A modern loft-style apartment with urban design elements, perfect for digital nomads.',
-    price: 95,
-    capacity: 3,
-    size: 45,
+    price: 450,
+    capacity: 4,
+    size: 35,
     amenities: ['Wi-Fi', 'Full kitchen', 'Air conditioning', 'Private bathroom', 'Smart TV', 'Workspace'],
     images: [
       {
@@ -90,11 +90,11 @@ export const apartments: Apartment[] = [
   },
   {
     id: 4,
-    name: 'Family Suite',
+    name: 'Apartament nr 4',
     description: 'A spacious apartment designed for families, with separate bedroom and plenty of space.',
-    price: 120,
+    price: 450,
     capacity: 4,
-    size: 60,
+    size: 35,
     amenities: ['Wi-Fi', 'Full kitchen', 'Air conditioning', 'Private bathroom', 'TV', 'Washing machine'],
     images: [
       {
@@ -119,9 +119,9 @@ export const apartments: Apartment[] = [
   },
   {
     id: 5,
-    name: 'Cozy Studio',
+    name: 'Apartament nr 5',
     description: 'A compact and affordable studio apartment, perfect for budget travelers.',
-    price: 65,
+    price: 250,
     capacity: 2,
     size: 25,
     amenities: ['Wi-Fi', 'Kitchenette', 'Private bathroom', 'TV'],
@@ -148,11 +148,11 @@ export const apartments: Apartment[] = [
   },
   {
     id: 6,
-    name: 'Penthouse Apartment',
+    name: 'Apartament nr 6',
     description: 'Our premium penthouse apartment with panoramic views and luxury amenities.',
-    price: 150,
-    capacity: 4,
-    size: 75,
+    price: 250,
+    capacity: 2,
+    size: 25,
     amenities: ['Wi-Fi', 'Full kitchen', 'Air conditioning', 'Private bathroom', 'Smart TV', 'Terrace', 'Premium furniture'],
     images: [
       {

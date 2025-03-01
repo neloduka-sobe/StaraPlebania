@@ -47,8 +47,7 @@ const ApartmentCard: React.FC<ApartmentCardProps> = ({ apartment }) => {
               <span>{apartment.size} {t('apartments.sqm')}</span>
             </div>
             <div className="flex items-center text-gray-600">
-              <Euro size={18} className="mr-1" />
-              <span>{apartment.price} {t('apartments.perNight')}</span>
+              <span>{apartment.price} zł {t('apartments.perNight')}</span>
             </div>
           </div>
           

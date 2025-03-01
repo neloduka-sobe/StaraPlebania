@@ -34,10 +34,10 @@ export default {
   // Location section
   location: {
     title: 'Lokalizacja',
-    subtitle: 'Perfect for active travelers',
+    subtitle: 'Perfekcyjne miejsce do aktywnego wypoczynku',
     description: 'Our hostel is located in a prime location for active travelers. Just minutes away from hiking trails, bike paths, and outdoor adventure spots. The city center is easily accessible by public transport, with a bus stop right outside our building.',
-    activities: 'Nearby Activities',
-    hiking: 'Hiking Trails',
+    activities: 'Pobliskie aktywności',
+    hiking: 'Trasy górskie',
     biking: 'Mountain Biking',
     swimming: 'Swimming Spots',
     climbing: 'Rock Climbing',
