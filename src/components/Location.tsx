@@ -1,21 +1,26 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { MapPin, Mountain, Bike, Waves, Clock, Bus, Plane } from 'lucide-react';
+import { Mountain, Bike, Fence, Snowflake, Footprints, Landmark, Castle, School } from 'lucide-react';
 
 const Location: React.FC = () => {
   const { t } = useTranslation();
 
   const activities = [
+    { icon: <Bike size={24} />, title: t('location.biking'), distance: '10m' },
     { icon: <Mountain size={24} />, title: t('location.hiking'), distance: '500m' },
-    { icon: <Bike size={24} />, title: t('location.biking'), distance: '1km' },
-    { icon: <Waves size={24} />, title: t('location.swimming'), distance: '2km' }
+    { icon: <Footprints size={24} />, title: t('location.running'), distance: '2km' },
+    { icon: <Fence size={24} />, title: t('location.horses'), distance: '4km' },
+    { icon: <Landmark size={24} />, title: t('location.monuments'), distance: '5km' },
+    { icon: <Snowflake size={24} />, title: t('location.skiing'), distance: '20km' },
   ];
 
   const distances = [
-    { icon: <MapPin size={24} />, title: t('location.cityCenter'), info: '3km' },
-    { icon: <Bus size={24} />, title: t('location.publicTransport'), info: '100m' },
-    { icon: <Plane size={24} />, title: t('location.airport'), info: '25km' }
+    { icon: <Castle size={24} />, title: t('location.niesytno'), info: '3km' },
+    { icon: <Castle size={24} />, title: t('location.bolkow'), info: '100m' },
+    { icon: <Mountain size={24} />, title: t('location.sniezka'), info: '25km' },
+    { icon: <Mountain size={24} />, title: t('location.trojgarb'), info: '25km' },
+    { icon: <School size={24} />, title: t('location.miedzianka'), info: '25km' },
   ];
 
   return (
@@ -52,7 +57,7 @@ const Location: React.FC = () => {
           >
             <div className="bg-gray-200 rounded-lg overflow-hidden h-80 mb-6">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937604!2d2.2922926156744847!3d48.858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1621543331496!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.1600316595304!2d16.0305849!3d50.883748399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470efd31df31ade3%3A0x57e744218361ba0d!2sStara%20Plebania!5e0!3m2!1spl!2spl!4v1740850409584!5m2!1spl!2spl" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
@@ -98,7 +103,7 @@ const Location: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="text-2xl font-bold mb-4">{t('location.cityCenter')}</h3>
+              <h3 className="text-2xl font-bold mb-4">{t('location.attractions')}</h3>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 {distances.map((item, index) => (
                   <div key={index} className="flex items-center py-3 border-b last:border-b-0">

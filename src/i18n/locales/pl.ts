@@ -35,15 +35,20 @@ export default {
   location: {
     title: 'Lokalizacja',
     subtitle: 'Perfekcyjne miejsce do aktywnego wypoczynku',
-    description: 'Our hostel is located in a prime location for active travelers. Just minutes away from hiking trails, bike paths, and outdoor adventure spots. The city center is easily accessible by public transport, with a bus stop right outside our building.',
+    description: 'Dogodna lokalizacja Starej Plebanii sprawia, że pomimo bliskości do wielu atrakcji turystycznych, sportowych i rekreacyjnych zaznają tu Państwo spokoju. Szybki dojazd do Jeleniej Góry, Wałbrzycha, Karpacza, Karkonoszy, Czech i wielu innych lokalizacji sprawia, że tak znane, jak i ukryte perły Sudetów są na wyciągnięcie ręki.',
     activities: 'Pobliskie aktywności',
-    hiking: 'Trasy górskie',
-    biking: 'Mountain Biking',
-    swimming: 'Swimming Spots',
-    climbing: 'Rock Climbing',
-    cityCenter: 'Distance to City Center',
-    publicTransport: 'Public Transport',
-    airport: 'Airport Transfer'
+    hiking: 'Piesze Trasy Górskie',
+    biking: 'Trasy Rowerowe',
+    horses: 'Jazda Konna',
+    skiing: 'Stoki Narciarskie',
+    running: 'Trasy Biegowe',
+    monuments: 'Zabytki',
+    attractions: 'Polecane atrakcje',
+    niesytno: 'Zamek Niesytno',
+    bolkow: 'Zamek Bolków',
+    sniezka: 'Śnieżka',
+    trojgarb: 'Trójgarb',
+    miedzianka: 'Miedzianka'
   },
   
   // History section
