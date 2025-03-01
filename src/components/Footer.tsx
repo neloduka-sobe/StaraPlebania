@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Stara Plebania</h3>
             <p className="text-gray-400 mb-4">
-              Nocleg dla aktywnych w sercu Kaczaw
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/staraplebania/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Napisz do nas!</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.callToAction')}</h3>
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Nawigacja</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.navigation')}</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#home" className="text-gray-400 hover:text-white transition-colors">

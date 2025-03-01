@@ -73,7 +73,8 @@ export default {
     submit: 'Wyślij zapytanie o rezerwację',
     success: 'Dziękujemy. Twoje zapytanie zostało wysłane!',
     error: 'Wystąpił błąd, proszę spróbuj ponownie.',
-    required: 'Pole wymagane'
+    required: 'Pole wymagane',
+    thankYou: "Dziękujemy!"
   },
   
   // Footer
@@ -82,5 +83,8 @@ export default {
     address: 'Pastewnik 46 58-410 Marciszów',
     phone: '+48 727 339 996',
     email: 'staraplebania@stplebania.pl',
+    description: "Nocleg dla aktywnych w sercu Kaczaw",
+    callToAction: "Napisz do nas!",
+    navigation: "Nawigacja"
   }
 };
