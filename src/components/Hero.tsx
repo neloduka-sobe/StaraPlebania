@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
         transition={{ repeat: Infinity, duration: 1.5 }}
       >
         <a href="#apartments" className="flex flex-col items-center">
-          <span className="mb-2 text-sm">Scroll</span>
+          <span className="mb-2 text-sm">Przewiń</span>
           <ChevronDown size={24} />
         </a>
       </motion.div>

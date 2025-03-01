@@ -41,10 +41,10 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-lg bg-white/30 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#home" className="text-xl font-bold text-indigo-600">Mountain View Hostel</a>
+          <a href="#home" className="text-xl font-bold text-indigo-600">Stara Plebania</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

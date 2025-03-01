@@ -15,8 +15,8 @@ i18n
         translation: plTranslation
       }
     },
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: 'pl',
+    fallbackLng: 'pl',
     interpolation: {
       escapeValue: false
     }
@@ -25,6 +25,6 @@ i18n
 export default i18n;
 
 export const languages = [
+  { code: 'pl', name: 'Polski', flag: '🇵🇱' },
   { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'pl', name: 'Polski', flag: '🇵🇱' }
 ];

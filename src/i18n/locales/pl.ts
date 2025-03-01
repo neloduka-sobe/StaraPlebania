@@ -57,19 +57,19 @@ export default {
   
   // Contact form
   contact: {
-    title: 'Book Your Stay',
-    subtitle: 'We\'ll get back to you within 24 hours',
-    name: 'Full Name',
-    email: 'Email Address',
-    phone: 'Phone Number',
-    apartment: 'Select Apartment',
-    checkIn: 'Check-in Date',
-    checkOut: 'Check-out Date',
-    guests: 'Number of Guests',
-    message: 'Additional Information',
-    submit: 'Send Booking Request',
-    success: 'Thank you! Your booking request has been sent.',
-    error: 'There was an error sending your request. Please try again.',
+    title: 'Zarezerwuj swój pobyt',
+    subtitle: 'Daj nam znać o Twoich planach, a my znajdziemy coś idealnego dla Ciebie!',
+    name: 'Imię i nazwisko',
+    email: 'Adres email',
+    phone: 'Numer telefonu',
+    apartment: 'Wybierz apartament',
+    checkIn: 'Data zameldowania',
+    checkOut: 'Data wymeldowania',
+    guests: 'Ilość osób',
+    message: 'Dodatkowe Informacje',
+    submit: 'Wyślij zapytanie o rezerwację',
+    success: 'Dziękujemy. Twoje zapytanie zostało wysłane!',
+    error: 'Wystąpił błąd, proszę spróbuj ponownie.',
     required: 'Pole wymagane'
   },
   
