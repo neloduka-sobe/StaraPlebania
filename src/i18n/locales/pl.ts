@@ -1,39 +1,39 @@
 export default {
   // Navigation
   nav: {
-    home: 'Home',
-    apartments: 'Apartments',
-    location: 'Location',
-    history: 'History',
-    contact: 'Contact'
+    home: 'Strona Główna',
+    apartments: 'Apartamenty',
+    location: 'Lokalizacja',
+    history: 'Historia',
+    contact: 'Kontakt'
   },
   
   // Hero section
   hero: {
-    title: 'Welcome to Mountain View Hostel',
-    subtitle: 'Your perfect stay in the heart of nature',
-    cta: 'Explore Apartments'
+    title: 'Witajcie w Starej Plebanii!',
+    subtitle: 'Nocleg dla aktywnych w sercu Kaczaw',
+    cta: 'Odkryj nasze apartamenty!'
   },
   
   // Apartments section
   apartments: {
-    title: 'Our Apartments',
-    subtitle: 'Discover your perfect stay',
-    viewDetails: 'View Details',
-    bookNow: 'Book Now',
-    amenities: 'Amenities',
-    capacity: 'Capacity',
-    size: 'Size',
-    price: 'Price',
-    perNight: 'per night',
-    people: 'people',
-    sqm: 'sq.m',
-    gallery: 'Photo Gallery'
+    title: 'Nasze Apartamenty',
+    subtitle: 'Odkryj swoje nowe miejsce na ziemi',
+    viewDetails: 'Zobacz Szczegóły',
+    bookNow: 'Zarezerwuj Teraz',
+    amenities: 'Udogodnienia',
+    capacity: 'Ilość osób',
+    size: 'Powierzchnia',
+    price: 'Cena',
+    perNight: 'za noc',
+    people: 'osoby',
+    sqm: 'm²',
+    gallery: 'Galeria'
   },
   
   // Location section
   location: {
-    title: 'Location',
+    title: 'Lokalizacja',
     subtitle: 'Perfect for active travelers',
     description: 'Our hostel is located in a prime location for active travelers. Just minutes away from hiking trails, bike paths, and outdoor adventure spots. The city center is easily accessible by public transport, with a bus stop right outside our building.',
     activities: 'Nearby Activities',
@@ -48,7 +48,7 @@ export default {
   
   // History section
   history: {
-    title: 'Our History',
+    title: 'Nasza historia',
     subtitle: 'A building with character',
     paragraph1: 'Built in 1923, our building has a rich history that reflects the character of the region. Originally constructed as a family residence, it was converted into a small hotel in the 1950s.',
     paragraph2: 'In 2010, we completely renovated the building while preserving its historical charm and architectural details. Each apartment has been thoughtfully designed to offer modern comfort while honoring the building\'s heritage.',
@@ -70,14 +70,14 @@ export default {
     submit: 'Send Booking Request',
     success: 'Thank you! Your booking request has been sent.',
     error: 'There was an error sending your request. Please try again.',
-    required: 'Required field'
+    required: 'Pole wymagane'
   },
   
   // Footer
   footer: {
-    rights: 'All rights reserved',
-    address: 'Mountain View Street 123, 10000 Nature City',
-    phone: '+1 234 567 890',
-    email: 'info@mountainviewhostel.com'
+    rights: 'Wszelkie prawa zastrzeżone',
+    address: 'Pastewnik 46 58-410 Marciszów',
+    phone: '+48 727 339 996',
+    email: 'staraplebania@stplebania.pl'
   }
 };
