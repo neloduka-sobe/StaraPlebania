@@ -1,8 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import enTranslation from './locales/en';
-import esTranslation from './locales/es';
-import deTranslation from './locales/de';
+import plTranslation from './locales/pl';
 
 // Initialize i18n
 i18n
@@ -12,11 +11,8 @@ i18n
       en: {
         translation: enTranslation
       },
-      es: {
-        translation: esTranslation
-      },
-      de: {
-        translation: deTranslation
+      pl: {
+        translation: plTranslation
       }
     },
     lng: 'en',
@@ -30,6 +26,5 @@ export default i18n;
 
 export const languages = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' }
+  { code: 'pl', name: 'Polski', flag: '🇵🇱' }
 ];
