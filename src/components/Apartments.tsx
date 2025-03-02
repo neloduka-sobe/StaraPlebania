@@ -1,7 +1,6 @@
 import React, { lazy } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-//import ApartmentCard from './ApartmentCard';
 const ApartmentCard = lazy(() => import('./ApartmentCard'))
 import { apartments } from '../data/apartments';
 

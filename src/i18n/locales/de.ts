@@ -10,7 +10,7 @@ export default {
 
   // Hero section
   hero: {
-    title: 'Willkommen in der Alten Plebania!',
+    title: 'Willkommen in der Stara Plebania!',
     subtitle: 'Unterkunft für Aktive im Herzen von Kaczawy',
     cta: 'Entdecken Sie unsere Apartments!',
     scroll: "Scrollen"
