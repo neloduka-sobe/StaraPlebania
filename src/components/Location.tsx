@@ -48,14 +48,14 @@ const Location: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="bg-gray-200 rounded-lg overflow-hidden h-80 mb-6">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.1600316595304!2d16.0305849!3d50.883748399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470efd31df31ade3%3A0x57e744218361ba0d!2sStara%20Plebania!5e0!3m2!1spl!2spl!4v1740850409584!5m2!1spl!2spl" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={false} 
-                loading="lazy"
-                title="Map"
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.159850331732!2d16.028015341338893!3d50.88375175618831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470efd31df31ade3%3A0x57e744218361ba0d!2sStara%20Plebania!5e0!3m2!1spl!2spl!4v1740909926106!5m2!1spl!2spl"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }} 
+              allowFullScreen={false}
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map"
               ></iframe>
             </div>
             <p className="text-gray-600">
