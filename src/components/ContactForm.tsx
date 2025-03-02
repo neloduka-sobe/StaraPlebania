@@ -28,18 +28,12 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     setFormStatus('submitting');
     
-    // Get the selected apartment details
-    const selectedApartment = apartments.find(apt => apt.id === formData.apartment);
-    
     // Prepare data for Formspree
     const formspreeData = {
       ...formData,
       checkIn: checkInDate ? checkInDate.toISOString().split('T')[0] : '',
       checkOut: checkOutDate ? checkOutDate.toISOString().split('T')[0] : '',
-      // Use the selected apartment option text directly from the dropdown
-      apartmentInfo: selectedApartment 
-        ? `${selectedApartment.name} (${selectedApartment.price}zł/${t('apartments.perNight')})`
-        : 'No apartment selected'
+      // Just send the apartment ID/number as selected
     };
     
     try {
