@@ -1,10 +1,8 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-//import PhotoAlbum from 'react-photo-album';
-const PhotoAlbum = React.lazy(() => import('react-photo-album'));
-//import Lightbox from 'yet-another-react-lightbox';
-const Lightbox = React.lazy(() => import('yet-another-react-lightbox'));
+import PhotoAlbum from 'react-photo-album';
+import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
 interface GalleryImage {
