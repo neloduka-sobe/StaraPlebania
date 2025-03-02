@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp CNAME dist/ && cp favicon/* dist/",
+    "build": "vite build && cp CNAME dist/ && cp favicon/* dist/ && cp -r assets/ dist*",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"

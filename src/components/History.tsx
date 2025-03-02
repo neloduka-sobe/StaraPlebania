@@ -41,14 +41,14 @@ const History: React.FC = () => {
             <div className="space-y-4">
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  src="/assets/images/historia1.png" 
                   alt="Historical building exterior" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  src="/assets/images/historia2.jpg" 
                   alt="Historical building interior" 
                   className="w-full h-full object-cover"
                 />
@@ -57,14 +57,14 @@ const History: React.FC = () => {
             <div className="space-y-4 mt-8">
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  src="/assets/images/historia3.jpg" 
                   alt="Historical building detail" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  src="/assets/images/historia4.png" 
                   alt="Historical building renovation" 
                   className="w-full h-full object-cover"
                 />
