@@ -90,7 +90,8 @@ export default {
     success: 'Vielen Dank. Ihre Anfrage wurde gesendet!',
     error: 'Ein Fehler ist aufgetreten, bitte versuchen Sie es erneut.',
     required: 'Feld erforderlich',
-    thankYou: "Vielen Dank!"
+    thankYou: "Vielen Dank!",
+    sending: "Senden"
   },
 
   // Footer

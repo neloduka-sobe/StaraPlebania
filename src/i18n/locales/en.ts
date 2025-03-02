@@ -90,7 +90,8 @@ export default {
     success: 'Thank you. Your inquiry has been sent!',
     error: 'An error occurred, please try again.',
     required: 'Field required',
-    thankYou: "Thank you!"
+    thankYou: "Thank you!",
+    sending: "Sending"
   },
 
   // Footer
