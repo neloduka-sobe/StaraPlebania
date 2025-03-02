@@ -28,9 +28,9 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID!;
-    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID!;
-    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY!;
+    const serviceID = 'service_sdy660q';
+    const templateID = 'template_wv7hz06';
+    const publicKey = 'l0ibZKZJur9nrLMge';
 
     if (!serviceID || !templateID || !publicKey) {
       console.error("EmailJS credentials are missing.");
