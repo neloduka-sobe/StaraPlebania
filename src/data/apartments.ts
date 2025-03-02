@@ -8,7 +8,7 @@ export const apartments: Apartment[] = [
     price: 250,
     capacity: 2,
     size: 35,
-    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne', 'Kuchenka Mikrofalowa'],
+    amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware', 'apartments.amenities.microwave'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
@@ -37,7 +37,7 @@ export const apartments: Apartment[] = [
     price: 450,
     capacity: 4,
     size: 35,
-    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Zmywarka', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
+    amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.dishwasher', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
@@ -66,7 +66,7 @@ export const apartments: Apartment[] = [
     price: 450,
     capacity: 4,
     size: 35,
-    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
+    amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688',
@@ -95,7 +95,7 @@ export const apartments: Apartment[] = [
     price: 450,
     capacity: 4,
     size: 35,
-    amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
+    amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb',
@@ -124,7 +124,7 @@ export const apartments: Apartment[] = [
     price: 250,
     capacity: 2,
     size: 25,
-    amenities: ['Wi-Fi', 'Prywatna Łazienka', 'Aneks Kuchenny', 'Pralka', 'Kuchenka Mikrofalowa', 'Kuchenka Elektryczna', 'Czajnik', 'Przybory Kuchenne'],
+    amenities: ['apartments.amenities.wifi', 'apartments.amenities.privateBathroom', 'apartments.amenities.kitchenette', 'apartments.amenities.washingMachine', 'apartments.amenities.microwave', 'apartments.amenities.electricStove', 'apartments.amenities.kettle', 'apartments.amenities.kitchenware'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1630699144867-37acec97df5a',
@@ -153,7 +153,7 @@ export const apartments: Apartment[] = [
     price: 250,
     capacity: 2,
     size: 25,
-    amenities: ['Wi-Fi', 'Prywatna Łazienka', 'Czajnik', 'Zestaw do herbaty'],
+    amenities: ['apartments.amenities.wifi', 'apartments.amenities.privateBathroom', 'apartments.amenities.kettle', 'apartments.amenities.teaSet'],
     images: [
       {
         src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',

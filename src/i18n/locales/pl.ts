@@ -22,14 +22,30 @@ export default {
     subtitle: 'Odkryj swoje nowe miejsce na ziemi',
     viewDetails: 'Zobacz Szczegóły',
     bookNow: 'Zarezerwuj Teraz',
-    amenities: 'Udogodnienia',
+    amenitiesName: 'Udogodnienia',
     capacity: 'Ilość osób',
     size: 'Powierzchnia',
     price: 'Cena',
     perNight: 'za noc',
     people: 'osoby',
     sqm: 'm²',
-    gallery: 'Galeria'
+    gallery: 'Galeria',
+    // Added amenities translations
+    amenities: {
+      wifi: 'Wi-Fi',
+      kitchenette: 'Aneks Kuchenny',
+      fridge: 'Lodówka',
+      privateBathroom: 'Prywatna Łazienka',
+      tv: 'Telewizor',
+      kettle: 'Czajnik',
+      electricStove: 'Kuchenka Elektryczna',
+      wardrobe: 'Szafa',
+      kitchenware: 'Przybory kuchenne',
+      microwave: 'Kuchenka Mikrofalowa',
+      dishwasher: 'Zmywarka',
+      washingMachine: 'Pralka',
+      teaSet: 'Zestaw do herbaty'
+    }
   },
   
   // Location section

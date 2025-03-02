@@ -79,12 +79,12 @@ const ApartmentCard: React.FC<ApartmentCardProps> = ({ apartment }) => {
               exit={{ opacity: 0, height: 0 }}
               className="mt-4 pt-4 border-t"
             >
-              <h4 className="font-semibold mb-2">{t('apartments.amenities')}</h4>
+              <h4 className="font-semibold mb-2">{t('apartments.amenitiesName')}</h4>
               <ul className="grid grid-cols-2 gap-2">
                 {apartment.amenities.map((amenity, index) => (
                   <li key={index} className="flex items-center text-gray-600">
                     <span className="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
-                    {amenity}
+                    {t(amenity)}
                   </li>
                 ))}
               </ul>

@@ -29,7 +29,23 @@ export default {
     perNight: 'za noc',
     people: 'osoby',
     sqm: 'm²',
-    gallery: 'Galeria'
+    gallery: 'Galeria',
+    // Added amenities translations
+    amenitiesList: {
+      wifi: 'Wi-Fi',
+      kitchenette: 'Aneks Kuchenny',
+      fridge: 'Lodówka',
+      privateBathroom: 'Prywatna Łazienka',
+      tv: 'Telewizor',
+      kettle: 'Czajnik',
+      electricStove: 'Kuchenka Elektryczna',
+      wardrobe: 'Szafa',
+      kitchenware: 'Przybory kuchenne',
+      microwave: 'Kuchenka Mikrofalowa',
+      dishwasher: 'Zmywarka',
+      washingMachine: 'Pralka',
+      teaSet: 'Zestaw do herbaty'
+    }
   },
   
   // Location section
@@ -108,12 +124,12 @@ export default {
     apartment4: {
       name: 'Apartament nr 4',
       description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
-      amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
+      amenities: ['Wi-Fissssss', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
     },
     apartment5: {
       name: 'Apartament nr 5',
       description: 'Przestronny pokój dwuosobowy z własną łazienką i aneksem kuchennym.',
-      amenities: ['Wi-Fi', 'Prywatna Łazienka', 'Aneks Kuchenny', 'Pralka', 'Kuchenka Mikrofalowa', 'Kuchenka Elektryczna', 'Czajnik', 'Przybory Kuchenne'],
+      amenities: ['Wi-Fissss', 'Prywatna Łazienka', 'Aneks Kuchenny', 'Pralka', 'Kuchenka Mikrofalowa', 'Kuchenka Elektryczna', 'Czajnik', 'Przybory Kuchenne'],
     },
     apartment6: {
       name: 'Apartament nr 6',
