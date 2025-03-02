@@ -149,7 +149,7 @@ export const apartments: Apartment[] = [
   {
     id: 6,
     name: 'Apartament nr 6',
-    description: 'Przestronny pokój dwuosobowy z własną łazienką i aneksem kuchennym.',
+    description: 'Przestronny pokój dwuosobowy z własną łazienką.',
     price: 250,
     capacity: 2,
     size: 25,

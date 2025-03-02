@@ -1,5 +1,8 @@
 # StaraPlebania
 
+
+### TODO:
+[]
 ### Favicon
 This favicon was generated using the following graphics from Twitter Twemoji:
 
