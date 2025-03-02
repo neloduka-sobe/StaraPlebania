@@ -17,33 +17,65 @@ const ContactForm: React.FC = () => {
   });
   const [checkInDate, setCheckInDate] = useState<Date | null>(null);
   const [checkOutDate, setCheckOutDate] = useState<Date | null>(null);
-  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus('success');
-      // Reset form after success
+    setFormStatus('submitting');
+    
+    // Prepare data for Formspree
+    const formspreeData = {
+      ...formData,
+      checkIn: checkInDate ? checkInDate.toISOString().split('T')[0] : '',
+      checkOut: checkOutDate ? checkOutDate.toISOString().split('T')[0] : '',
+      // Get the apartment name instead of just ID
+      apartmentName: formData.apartment ? 
+        apartments.find(apt => apt.id === formData.apartment)?.name + 
+        ` (${apartments.find(apt => apt.id === formData.apartment)?.price}zł/${t('apartments.perNight')})` : ''
+    };
+    
+    try {
+      const response = await fetch('https://formspree.io/f/mqaerdew', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formspreeData)
+      });
+      
+      if (response.ok) {
+        setFormStatus('success');
+        // Reset form after success
+        setTimeout(() => {
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            apartment: '',
+            guests: 1,
+            message: ''
+          });
+          setCheckInDate(null);
+          setCheckOutDate(null);
+          setFormStatus('idle');
+        }, 3000);
+      } else {
+        setFormStatus('error');
+        setTimeout(() => {
+          setFormStatus('idle');
+        }, 3000);
+      }
+    } catch (error) {
+      setFormStatus('error');
       setTimeout(() => {
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          apartment: '',
-          guests: 1,
-          message: ''
-        });
-        setCheckInDate(null);
-        setCheckOutDate(null);
         setFormStatus('idle');
       }, 3000);
-    }, 1000);
+    }
   };
 
   return (
@@ -239,8 +271,19 @@ const ContactForm: React.FC = () => {
                     className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    disabled={formStatus === 'submitting'}
                   >
-                    {t('contact.submit')}
+                    {formStatus === 'submitting' ? (
+                      <span className="flex items-center justify-center">
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        {t('contact.sending')}
+                      </span>
+                    ) : (
+                      t('contact.submit')
+                    )}
                   </motion.button>
                 </div>
                 

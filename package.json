@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.4",
     "@types/react-datepicker": "^4.19.5",
     "framer-motion": "^11.0.5",
     "i18next": "^23.10.0",
