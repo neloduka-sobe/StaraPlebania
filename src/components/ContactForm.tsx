@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { lazy, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-const DatePicker = React.lazy(() => import('react-datepicker'));
+const DatePicker = lazy(() => import('react-datepicker'));
 import 'react-datepicker/dist/react-datepicker.css';
 import { apartments } from '../data/apartments';
 
