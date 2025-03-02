@@ -7,6 +7,7 @@ export default defineConfig({
   base: '/',
   plugins: [react(), compression({ algorithm: "brotliCompress" })],
   optimizeDeps: {
+    include: ['framer-motion', 'react-i18next'],
     exclude: ['lucide-react'],
   },
   build: {
