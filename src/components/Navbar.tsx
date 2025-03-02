@@ -97,10 +97,11 @@ const Navbar: React.FC = () => {
             <button 
               onClick={toggleLanguages}
               className="text-gray-700 hover:text-indigo-600 transition-colors mr-4"
+              title="Mobile Menu Button"
             >
               <Globe size={20} />
             </button>
-            <button onClick={toggleMenu} className="text-gray-700 hover:text-indigo-600 transition-colors">
+            <button onClick={toggleMenu} className="text-gray-700 hover:text-indigo-600 transition-colors" title="Mobile Menu Button">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>

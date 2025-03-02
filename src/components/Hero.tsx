@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: 'url(https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=70)',
           backgroundPosition: 'center',
         }}
       >
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
       <motion.div 
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white"
         animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 1.5 }}
+        transition={{ repeat: Infinity, duration: 1.5}}
       >
         <a href="#apartments" className="flex flex-col items-center">
           <span className="mb-2 text-sm">{t('hero.scroll')}</span>
