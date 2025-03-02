@@ -1,140 +1,140 @@
 export default {
   // Navigation
   nav: {
-    home: 'Strona Główna',
-    apartments: 'Apartamenty',
-    location: 'Lokalizacja',
-    history: 'Historia',
+    home: 'Startseite',
+    apartments: 'Apartments',
+    location: 'Lage',
+    history: 'Geschichte',
     contact: 'Kontakt'
   },
-  
+
   // Hero section
   hero: {
-    title: 'Witajcie w Starej Plebanii!',
-    subtitle: 'Nocleg dla aktywnych w sercu Kaczaw',
-    cta: 'Odkryj nasze apartamenty!',
-    scroll: "Przewiń"
+    title: 'Willkommen in der Alten Plebania!',
+    subtitle: 'Unterkunft für Aktive im Herzen von Kaczawy',
+    cta: 'Entdecken Sie unsere Apartments!',
+    scroll: "Scrollen"
   },
-  
+
   // Apartments section
   apartments: {
-    title: 'Nasze Apartamenty',
-    subtitle: 'Odkryj swoje nowe miejsce na ziemi',
-    viewDetails: 'Zobacz Szczegóły',
-    bookNow: 'Zarezerwuj Teraz',
-    amenities: 'Udogodnienia',
-    capacity: 'Ilość osób',
-    size: 'Powierzchnia',
-    price: 'Cena',
-    perNight: 'za noc',
-    people: 'osoby',
+    title: 'Unsere Apartments',
+    subtitle: 'Entdecken Sie Ihren neuen Ort auf Erden',
+    viewDetails: 'Details ansehen',
+    bookNow: 'Jetzt buchen',
+    amenitiesName: 'Ausstattung',
+    capacity: 'Kapazität',
+    size: 'Größe',
+    price: 'Preis',
+    perNight: 'pro Nacht',
+    people: 'Personen',
     sqm: 'm²',
-    gallery: 'Galeria',
+    gallery: 'Galerie',
     // Added amenities translations
-    amenitiesList: {
-      wifi: 'Wi-Fi',
-      kitchenette: 'Aneks Kuchenny',
-      fridge: 'Lodówka',
-      privateBathroom: 'Prywatna Łazienka',
-      tv: 'Telewizor',
-      kettle: 'Czajnik',
-      electricStove: 'Kuchenka Elektryczna',
-      wardrobe: 'Szafa',
-      kitchenware: 'Przybory kuchenne',
-      microwave: 'Kuchenka Mikrofalowa',
-      dishwasher: 'Zmywarka',
-      washingMachine: 'Pralka',
-      teaSet: 'Zestaw do herbaty'
+    amenities: {
+      wifi: 'WLAN',
+      kitchenette: 'Kochnische',
+      fridge: 'Kühlschrank',
+      privateBathroom: 'Privates Badezimmer',
+      tv: 'Fernseher',
+      kettle: 'Wasserkocher',
+      electricStove: 'Elektroherd',
+      wardrobe: 'Kleiderschrank',
+      kitchenware: 'Küchenutensilien',
+      microwave: 'Mikrowelle',
+      dishwasher: 'Geschirrspüler',
+      washingMachine: 'Waschmaschine',
+      teaSet: 'Teeset'
     }
   },
-  
+
   // Location section
   location: {
-    title: 'Lokalizacja',
-    subtitle: 'Perfekcyjne miejsce do aktywnego wypoczynku',
-    description: 'Dogodna lokalizacja Starej Plebanii sprawia, że pomimo bliskości do wielu atrakcji turystycznych, sportowych i rekreacyjnych zaznają tu Państwo spokoju. Szybki dojazd do Jeleniej Góry, Wałbrzycha, Karpacza, Karkonoszy, Czech i wielu innych lokalizacji sprawia, że tak znane, jak i ukryte perły Sudetów są na wyciągnięcie ręki.',
-    activities: 'Pobliskie aktywności',
-    hiking: 'Piesze Trasy Górskie',
-    biking: 'Trasy Rowerowe',
-    horses: 'Jazda Konna',
-    skiing: 'Stoki Narciarskie',
-    running: 'Trasy Biegowe',
-    monuments: 'Zabytki'
+    title: 'Lage',
+    subtitle: 'Perfekter Ort für einen aktiven Urlaub',
+    description: 'Die günstige Lage der Alten Plebania sorgt dafür, dass Sie trotz der Nähe zu vielen touristischen, sportlichen und Freizeitattraktionen hier Ruhe finden. Die schnelle Anbindung an Jelenia Góra, Wałbrzych, Karpacz, Karkonosze, Tschechien und viele andere Orte macht sowohl bekannte als auch versteckte Juwelen der Sudeten leicht erreichbar.',
+    activities: 'Aktivitäten in der Nähe',
+    hiking: 'Wanderwege',
+    biking: 'Radwege',
+    horses: 'Reiten',
+    skiing: 'Skipisten',
+    running: 'Laufstrecken',
+    monuments: 'Denkmäler'
   },
-  
+
   // History section
   history: {
-    title: 'Nasza historia',
-    subtitle: 'Budynek z historią i charakterem',
-    paragraph1: 'Sami nie wiemy kiedy zaczyna się historia Starej Plebanii. Wiadomo natomiast, że do roku 1946 budynek pełnił rolę miejscowej plebanii, w której mieszkał pastor wraz z rodziną. Historię poprzednich mieszkańców poznaliśmy z ust syna ostaniego pastora - zainspirowała nas ona do tchnięcia życia w to piękne miejsce.',
-    paragraph2: 'Od 1946 roku budynek grał różnorakie role, od domu sióstr zakonnych, poprzez szkołę dla miejscowej młodzieży, sklep po mieszkania socjalne. Budynek był kiedyś nawet magazynem soli drogowej. Nie wspominając o tym, jak raz prawie spłonął. Przez te wszystkie lata powoli tracił swój pierwotny urok i popadał w ruinę',
-    paragraph3: 'Słysząc historię tego domu, jak i całej okolicy postanowiliśmy tchnąć nowe życie w te zmęczone mury - niewiele poza nimi zostało. Podjęliśmy się misji przywrócenia Starej Plebanii do świetności. Tak oto czytają Państwo ten opis i na własną rękę mogą jak my lata temu odkryć piękno i tajemniczość tego miejsca.',
-    period1: "Plebania",
-    period2: "Historia Upadku",
-    period3: "Nowe Życie",
+    title: 'Unsere Geschichte',
+    subtitle: 'Ein Gebäude mit Geschichte und Charakter',
+    paragraph1: 'Wir wissen nicht, wann die Geschichte der Alten Plebania beginnt. Es ist jedoch bekannt, dass das Gebäude bis 1946 als örtliches Pfarrhaus diente, in dem der Pfarrer und seine Familie lebten. Die Geschichte der früheren Bewohner erfuhren wir vom Sohn des letzten Pfarrers - sie inspirierte uns, diesem schönen Ort Leben einzuhauchen.',
+    paragraph2: 'Seit 1946 spielte das Gebäude verschiedene Rollen, von einem Heim für Nonnen über eine Schule für die örtliche Jugend, ein Geschäft bis hin zu Sozialwohnungen. Das Gebäude war sogar einmal ein Streusalzlager. Ganz zu schweigen davon, dass es fast einmal abbrannte. Im Laufe der Jahre verlor es langsam seinen ursprünglichen Charme und verfiel.',
+    paragraph3: 'Als wir die Geschichte dieses Hauses und der gesamten Gegend hörten, beschlossen wir, diesen müden Mauern neues Leben einzuhauchen - wenig mehr war davon übrig. Wir haben uns die Aufgabe gestellt, die Alte Plebania wieder in ihren alten Glanz zu versetzen. So lesen Sie diese Beschreibung und können die Schönheit und Geheimnisse dieses Ortes auf eigene Faust entdecken, wie wir es vor Jahren getan haben.',
+    period1: "Pfarrhaus",
+    period2: "Geschichte des Verfalls",
+    period3: "Neues Leben",
   },
-  
+
   // Contact form
   contact: {
-    title: 'Zarezerwuj swój pobyt',
-    subtitle: 'Daj nam znać o Twoich planach, a my znajdziemy coś idealnego dla Ciebie!',
-    name: 'Imię i nazwisko',
-    email: 'Adres email',
-    phone: 'Numer telefonu',
-    apartment: 'Wybierz apartament',
-    checkIn: 'Data zameldowania',
-    checkOut: 'Data wymeldowania',
-    guests: 'Ilość osób',
-    message: 'Dodatkowe Informacje',
-    submit: 'Wyślij zapytanie o rezerwację',
-    success: 'Dziękujemy. Twoje zapytanie zostało wysłane!',
-    error: 'Wystąpił błąd, proszę spróbuj ponownie.',
-    required: 'Pole wymagane',
-    thankYou: "Dziękujemy!"
+    title: 'Buchen Sie Ihren Aufenthalt',
+    subtitle: 'Lassen Sie uns Ihre Pläne wissen und wir finden etwas Perfektes für Sie!',
+    name: 'Name und Nachname',
+    email: 'E-Mail-Adresse',
+    phone: 'Telefonnummer',
+    apartment: 'Apartment auswählen',
+    checkIn: 'Anreisedatum',
+    checkOut: 'Abreisedatum',
+    guests: 'Anzahl der Gäste',
+    message: 'Zusätzliche Informationen',
+    submit: 'Buchungsanfrage senden',
+    success: 'Vielen Dank. Ihre Anfrage wurde gesendet!',
+    error: 'Ein Fehler ist aufgetreten, bitte versuchen Sie es erneut.',
+    required: 'Feld erforderlich',
+    thankYou: "Vielen Dank!"
   },
-  
+
   // Footer
   footer: {
-    rights: 'Wszelkie prawa zastrzeżone',
+    rights: 'Alle Rechte vorbehalten',
     address: 'Pastewnik 46 58-410 Marciszów',
     phone: '+48 727 339 996',
     email: 'staraplebania@stplebania.pl',
-    description: "Nocleg dla aktywnych w sercu Kaczaw",
-    callToAction: "Napisz do nas!",
-    navigation: "Nawigacja"
+    description: "Unterkunft für Aktive im Herzen von Kaczawy",
+    callToAction: "Schreiben Sie uns!",
+    navigation: "Navigation"
   },
 
   // Apartments list - Complete with all apartment descriptions
   apartmentsList: {
     apartment1: {
-      name: 'Apartament nr 1',
-      description: 'Przestronny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
-      amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne', 'Kuchenka Mikrofalowa'],
+      name: 'Apartment Nr. 1',
+      description: 'Geräumiges Apartment mit eigenem Bad, Kochnische; bestehend aus Wohnzimmer und Schlafzimmer.',
+      amenities: ['WLAN', 'Kochnische', 'Kühlschrank', 'Privates Badezimmer', 'Fernseher', 'Wasserkocher', 'Elektroherd', 'Kleiderschrank', 'Küchenutensilien', 'Mikrowelle'],
     },
     apartment2: {
-      name: 'Apartament nr 2',
-      description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
-      amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Zmywarka', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
+      name: 'Apartment Nr. 2',
+      description: 'Geräumiges Familienapartment mit eigenem Bad, Kochnische; bestehend aus Wohnzimmer und Schlafzimmer.',
+      amenities: ['WLAN', 'Kochnische', 'Kühlschrank', 'Privates Badezimmer', 'Geschirrspüler', 'Mikrowelle', 'Wasserkocher', 'Elektroherd', 'Kleiderschrank', 'Küchenutensilien'],
     },
     apartment3: {
-      name: 'Apartament nr 3',
-      description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
-      amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
+      name: 'Apartment Nr. 3',
+      description: 'Geräumiges Familienapartment mit eigenem Bad, Kochnische; bestehend aus Wohnzimmer und Schlafzimmer.',
+      amenities: ['WLAN', 'Kochnische', 'Kühlschrank', 'Privates Badezimmer', 'Fernseher', 'Mikrowelle', 'Wasserkocher', 'Elektroherd', 'Kleiderschrank', 'Küchenutensilien'],
     },
     apartment4: {
-      name: 'Apartament nr 4',
-      description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
-      amenities: ['Wi-Fissssss', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
+      name: 'Apartment Nr. 4',
+      description: 'Geräumiges Familienapartment mit eigenem Bad, Kochnische; bestehend aus Wohnzimmer und Schlafzimmer.',
+      amenities: ['WLAN', 'Kochnische', 'Kühlschrank', 'Privates Badezimmer', 'Fernseher', 'Mikrowelle', 'Wasserkocher', 'Elektroherd', 'Kleiderschrank', 'Küchenutensilien'],
     },
     apartment5: {
-      name: 'Apartament nr 5',
-      description: 'Przestronny pokój dwuosobowy z własną łazienką i aneksem kuchennym.',
-      amenities: ['Wi-Fissss', 'Prywatna Łazienka', 'Aneks Kuchenny', 'Pralka', 'Kuchenka Mikrofalowa', 'Kuchenka Elektryczna', 'Czajnik', 'Przybory Kuchenne'],
+      name: 'Apartment Nr. 5',
+      description: 'Geräumiges Doppelzimmer mit eigenem Bad und Kochnische.',
+      amenities: ['WLAN', 'Privates Badezimmer', 'Kochnische', 'Waschmaschine', 'Mikrowelle', 'Elektroherd', 'Wasserkocher', 'Küchenutensilien'],
     },
     apartment6: {
-      name: 'Apartament nr 6',
-      description: 'Przestronny pokój dwuosobowy z własną łazienką.',
-      amenities: ['Wi-Fi', 'Prywatna Łazienka', 'Czajnik', 'Zestaw do herbaty'],
+      name: 'Apartment Nr. 6',
+      description: 'Geräumiges Doppelzimmer mit eigenem Bad.',
+      amenities: ['WLAN', 'Privates Badezimmer', 'Wasserkocher', 'Teeset'],
     }
   }
 };

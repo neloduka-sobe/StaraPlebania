@@ -1,82 +1,140 @@
 export default {
   // Navigation
   nav: {
-    home: 'Strona Główna',
-    apartments: 'Apartamenty',
-    location: 'Lokalizacja',
-    history: 'Historia',
-    contact: 'Kontakt'
+    home: 'Home',
+    apartments: 'Apartments',
+    location: 'Location',
+    history: 'History',
+    contact: 'Contact'
   },
-  
+
   // Hero section
   hero: {
-    title: 'Witajcie w Starej Plebanii!',
-    subtitle: 'Nocleg dla aktywnych w sercu Kaczaw',
-    cta: 'Odkryj nasze apartamenty!'
+    title: 'Welcome to Stara Plebania!',
+    subtitle: 'Accommodation for active people in the heart of Kaczawy',
+    cta: 'Discover our apartments!',
+    scroll: "Scroll"
   },
-  
+
   // Apartments section
   apartments: {
-    title: 'Nasze Apartamenty',
-    subtitle: 'Odkryj swoje nowe miejsce na ziemi',
-    viewDetails: 'Zobacz Szczegóły',
-    bookNow: 'Zarezerwuj Teraz',
-    amenities: 'Udogodnienia',
-    capacity: 'Ilość osób',
-    size: 'Powierzchnia',
-    price: 'Cena',
-    perNight: 'za noc',
-    people: 'osoby',
-    sqm: 'm²',
-    gallery: 'Galeria'
+    title: 'Our Apartments',
+    subtitle: 'Discover your new place on earth',
+    viewDetails: 'View Details',
+    bookNow: 'Book Now',
+    amenitiesName: 'Amenities',
+    capacity: 'Capacity',
+    size: 'Size',
+    price: 'Price',
+    perNight: 'per night',
+    people: 'people',
+    sqm: 'sqm',
+    gallery: 'Gallery',
+    // Added amenities translations
+    amenities: {
+      wifi: 'Wi-Fi',
+      kitchenette: 'Kitchenette',
+      fridge: 'Fridge',
+      privateBathroom: 'Private Bathroom',
+      tv: 'TV',
+      kettle: 'Kettle',
+      electricStove: 'Electric Stove',
+      wardrobe: 'Wardrobe',
+      kitchenware: 'Kitchenware',
+      microwave: 'Microwave',
+      dishwasher: 'Dishwasher',
+      washingMachine: 'Washing Machine',
+      teaSet: 'Tea Set'
+    }
   },
-  
+
   // Location section
   location: {
-    title: 'Lokalizacja',
-    subtitle: 'Perfekcyjne miejsce do aktywnego wypoczynku',
-    description: 'Dogodna lokalizacja Starej Plebanii sprawia, że pomimo bliskości do wielu atrakcji turystycznych, sportowych i rekreacyjnych zaznają tu Państwo spokoju. Szybki dojazd do Jeleniej Góry, Wałbrzycha, Karpacza, Karkonoszy, Czech i wielu innych lokalizacji sprawia, że tak znane, jak i ukryte perły Sudetów są na wyciągnięcie ręki.',
-    activities: 'Pobliskie aktywności',
-    hiking: 'Piesze Trasy Górskie',
-    biking: 'Trasy Rowerowe',
-    horses: 'Jazda Konna',
-    skiing: 'Stoki Narciarskie',
-    running: 'Trasy Biegowe',
-    monuments: 'Zabytki'
+    title: 'Location',
+    subtitle: 'Perfect place for an active holiday',
+    description: 'The convenient location of Stara Plebania ensures that despite the proximity to many tourist, sports and recreational attractions, you will find peace here. Quick access to Jelenia Góra, Wałbrzych, Karpacz, Karkonosze, Czech Republic and many other locations makes both well-known and hidden gems of the Sudetes within easy reach.',
+    activities: 'Nearby activities',
+    hiking: 'Hiking Trails',
+    biking: 'Biking Trails',
+    horses: 'Horse Riding',
+    skiing: 'Ski Slopes',
+    running: 'Running Trails',
+    monuments: 'Monuments'
   },
-  
+
   // History section
   history: {
-    title: 'Nasza historia',
-    subtitle: 'Budynek z historią i charakterem',
-    paragraph1: 'Sami nie wiemy kiedy zaczyna się historia Starej Plebanii. Wiadomo natomiast, że do roku 1946 budynek pełnił rolę miejscowej plebanii, w której mieszkał pastor wraz z rodziną. Historię poprzednich mieszkańców poznaliśmy z ust syna ostaniego pastora - zainspirowała nas ona do tchnięcia życia w to piękne miejsce.',
-    paragraph2: 'Od 1946 roku budynek grał różnorakie role, od domu sióstr zakonnych, poprzez szkołę dla miejscowej młodzieży, sklep po mieszkania socjalne. Budynek był kiedyś nawet magazynem soli drogowej. Nie wspominając o tym, jak raz prawie spłonął. Przez te wszystkie lata powoli tracił swój pierwotny urok i popadał w ruinę',
-    paragraph3: 'Słysząc historię tego domu, jak i całej okolicy postanowiliśmy tchnąć nowe życie w te zmęczone mury - niewiele poza nimi zostało. Podjęliśmy się misji przywrócenia Starej Plebanii do świetności. Tak oto czytają Państwo ten opis i na własną rękę mogą jak my lata temu odkryć piękno i tajemniczość tego miejsca.'
+    title: 'Our history',
+    subtitle: 'A building with history and character',
+    paragraph1: 'We don\'t know when the history of Stara Plebania begins. However, it is known that until 1946 the building served as the local rectory, where the pastor and his family lived. We learned the history of the previous residents from the son of the last pastor - it inspired us to breathe life into this beautiful place.',
+    paragraph2: 'Since 1946, the building has played various roles, from a home for nuns, through a school for local youth, a shop to social housing. The building was once even a road salt warehouse. Not to mention how it almost burned down once. Over all these years, it slowly lost its original charm and fell into disrepair.',
+    paragraph3: 'Hearing the history of this house and the entire area, we decided to breathe new life into these tired walls - little beyond them remained. We undertook the mission of restoring Stara Plebania to its former glory. Thus, you are reading this description and can discover the beauty and mystery of this place on your own, as we did years ago.',
+    period1: "Rectory",
+    period2: "History of Decline",
+    period3: "New Life",
   },
-  
+
   // Contact form
   contact: {
-    title: 'Zarezerwuj swój pobyt',
-    subtitle: 'Daj nam znać o Twoich planach, a my znajdziemy coś idealnego dla Ciebie!',
-    name: 'Imię i nazwisko',
-    email: 'Adres email',
-    phone: 'Numer telefonu',
-    apartment: 'Wybierz apartament',
-    checkIn: 'Data zameldowania',
-    checkOut: 'Data wymeldowania',
-    guests: 'Ilość osób',
-    message: 'Dodatkowe Informacje',
-    submit: 'Wyślij zapytanie o rezerwację',
-    success: 'Dziękujemy. Twoje zapytanie zostało wysłane!',
-    error: 'Wystąpił błąd, proszę spróbuj ponownie.',
-    required: 'Pole wymagane'
+    title: 'Book your stay',
+    subtitle: 'Let us know about your plans and we will find something perfect for you!',
+    name: 'Name and surname',
+    email: 'Email address',
+    phone: 'Phone number',
+    apartment: 'Choose apartment',
+    checkIn: 'Check-in date',
+    checkOut: 'Check-out date',
+    guests: 'Number of guests',
+    message: 'Additional Information',
+    submit: 'Send booking inquiry',
+    success: 'Thank you. Your inquiry has been sent!',
+    error: 'An error occurred, please try again.',
+    required: 'Field required',
+    thankYou: "Thank you!"
   },
-  
+
   // Footer
   footer: {
-    rights: 'Wszelkie prawa zastrzeżone',
+    rights: 'All rights reserved',
     address: 'Pastewnik 46 58-410 Marciszów',
     phone: '+48 727 339 996',
-    email: 'staraplebania@stplebania.pl'
+    email: 'staraplebania@stplebania.pl',
+    description: "Accommodation for active people in the heart of Kaczawy",
+    callToAction: "Write to us!",
+    navigation: "Navigation"
+  },
+
+  // Apartments list - Complete with all apartment descriptions
+  apartmentsList: {
+    apartment1: {
+      name: 'Apartment No. 1',
+      description: 'Spacious apartment with private bathroom, kitchenette; consisting of a living room and bedroom.',
+      amenities: ['Wi-Fi', 'Kitchenette', 'Fridge', 'Private Bathroom', 'TV', 'Kettle', 'Electric Stove', 'Wardrobe', 'Kitchenware', 'Microwave'],
+    },
+    apartment2: {
+      name: 'Apartment No. 2',
+      description: 'Spacious family apartment with private bathroom, kitchenette; consisting of a living room and bedroom.',
+      amenities: ['Wi-Fi', 'Kitchenette', 'Fridge', 'Private Bathroom', 'Dishwasher', 'Microwave', 'Kettle', 'Electric Stove', 'Wardrobe', 'Kitchenware'],
+    },
+    apartment3: {
+      name: 'Apartment No. 3',
+      description: 'Spacious family apartment with private bathroom, kitchenette; consisting of a living room and bedroom.',
+      amenities: ['Wi-Fi', 'Kitchenette', 'Fridge', 'Private Bathroom', 'TV', 'Microwave', 'Kettle', 'Electric Stove', 'Wardrobe', 'Kitchenware'],
+    },
+    apartment4: {
+      name: 'Apartment No. 4',
+      description: 'Spacious family apartment with private bathroom, kitchenette; consisting of a living room and bedroom.',
+      amenities: ['Wi-Fi', 'Kitchenette', 'Fridge', 'Private Bathroom', 'TV', 'Microwave', 'Kettle', 'Electric Stove', 'Wardrobe', 'Kitchenware'],
+    },
+    apartment5: {
+      name: 'Apartment No. 5',
+      description: 'Spacious double room with private bathroom and kitchenette.',
+      amenities: ['Wi-Fi', 'Private Bathroom', 'Kitchenette', 'Washing Machine', 'Microwave', 'Electric Stove', 'Kettle', 'Kitchenware'],
+    },
+    apartment6: {
+      name: 'Apartment No. 6',
+      description: 'Spacious double room with private bathroom.',
+      amenities: ['Wi-Fi', 'Private Bathroom', 'Kettle', 'Tea Set'],
+    }
   }
 };
