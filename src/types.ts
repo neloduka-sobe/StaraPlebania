@@ -1,7 +1,7 @@
 export interface Apartment {
   id: number;
   name: string;
-  description: string;
+  descriptionKey: string;
   price: number;
   capacity: number;
   size: number;
@@ -13,7 +13,6 @@ export interface Apartment {
     alt: string;
   }[];
 }
-
 export interface Language {
   code: string;
   name: string;

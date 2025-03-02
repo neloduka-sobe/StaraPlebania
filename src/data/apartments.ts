@@ -4,7 +4,7 @@ export const apartments: Apartment[] = [
   {
     id: 1,
     name: 'Apartament nr 1',
-    description: 'Przestronny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+    descriptionKey: 'apartmentsList.apartment1.description',
     price: 250,
     capacity: 2,
     size: 35,
@@ -33,7 +33,7 @@ export const apartments: Apartment[] = [
   {
     id: 2,
     name: 'Apartament nr 2',
-    description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+    descriptionKey: 'apartmentsList.apartment2.description',
     price: 450,
     capacity: 4,
     size: 35,
@@ -62,7 +62,7 @@ export const apartments: Apartment[] = [
   {
     id: 3,
     name: 'Apartament nr 3',
-    description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+    descriptionKey: 'apartmentsList.apartment3.description',
     price: 450,
     capacity: 4,
     size: 35,
@@ -91,7 +91,7 @@ export const apartments: Apartment[] = [
   {
     id: 4,
     name: 'Apartament nr 4',
-    description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+    descriptionKey: 'apartmentsList.apartment4.description',
     price: 450,
     capacity: 4,
     size: 35,
@@ -120,7 +120,7 @@ export const apartments: Apartment[] = [
   {
     id: 5,
     name: 'Apartament nr 5',
-    description: 'Przestronny pokój dwuosobowy z własną łazienką i aneksem kuchennym.',
+    descriptionKey: 'apartmentsList.apartment5.description',
     price: 250,
     capacity: 2,
     size: 25,
@@ -149,7 +149,7 @@ export const apartments: Apartment[] = [
   {
     id: 6,
     name: 'Apartament nr 6',
-    description: 'Przestronny pokój dwuosobowy z własną łazienką.',
+    descriptionKey: 'apartmentsList.apartment6.description',
     price: 250,
     capacity: 2,
     size: 25,

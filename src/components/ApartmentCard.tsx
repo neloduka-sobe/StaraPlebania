@@ -51,8 +51,8 @@ const ApartmentCard: React.FC<ApartmentCardProps> = ({ apartment }) => {
             </div>
           </div>
           
-          {/* Description */}
-          <p className="text-gray-600 mb-4">{apartment.description}</p>
+          {/* Description - Using translation key instead of direct description */}
+          <p className="text-gray-600 mb-4">{t(apartment.descriptionKey)}</p>
           
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
