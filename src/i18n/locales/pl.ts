@@ -86,5 +86,15 @@ export default {
     description: "Nocleg dla aktywnych w sercu Kaczaw",
     callToAction: "Napisz do nas!",
     navigation: "Nawigacja"
+  },
+
+  // Apartments list
+  apartmentsList: {
+    apartment1: {
+      name: 'Apartament nr 1',
+      description: 'Przestronny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+      amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne', 'Kuchenka Mikrofalowa'],
+    },
+
   }
 };
