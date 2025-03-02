@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Users, DotSquare as SquareFootage, ChevronRight } from 'lucide-react';
 import { Apartment } from '../types';
-const ApartmentGallery = lazy(() => import('./ApartmentGallery'))
+import ApartmentGallery  from './ApartmentGallery';
 
 interface ApartmentCardProps {
   apartment: Apartment;
@@ -34,7 +34,7 @@ const ApartmentCard: React.FC<ApartmentCardProps> = ({ apartment }) => {
         
         {/* Apartment Info */}
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2">{apartment.name}</h3>
+          <h3 className="text-xl font-bold mb-2">{t(apartment.name)}</h3>
           
           {/* Quick Info */}
           <div className="flex justify-between mb-4">

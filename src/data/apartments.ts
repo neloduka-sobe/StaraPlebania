@@ -3,7 +3,7 @@ import { Apartment } from '../types';
 export const apartments: Apartment[] = [
   {
     id: 1,
-    name: 'Apartament nr 1',
+    name: 'apartmentsList.apartment1.name',
     descriptionKey: 'apartmentsList.apartment1.description',
     price: 250,
     capacity: 2,
@@ -32,7 +32,7 @@ export const apartments: Apartment[] = [
   },
   {
     id: 2,
-    name: 'Apartament nr 2',
+    name: 'apartmentsList.apartment2.name',
     descriptionKey: 'apartmentsList.apartment2.description',
     price: 450,
     capacity: 4,
@@ -61,7 +61,7 @@ export const apartments: Apartment[] = [
   },
   {
     id: 3,
-    name: 'Apartament nr 3',
+    name: 'apartmentsList.apartment3.name',
     descriptionKey: 'apartmentsList.apartment3.description',
     price: 450,
     capacity: 4,
@@ -90,7 +90,7 @@ export const apartments: Apartment[] = [
   },
   {
     id: 4,
-    name: 'Apartament nr 4',
+    name: 'apartmentsList.apartment4.name',
     descriptionKey: 'apartmentsList.apartment4.description',
     price: 450,
     capacity: 4,
@@ -119,7 +119,7 @@ export const apartments: Apartment[] = [
   },
   {
     id: 5,
-    name: 'Apartament nr 5',
+    name: 'apartmentsList.apartment5.name',
     descriptionKey: 'apartmentsList.apartment5.description',
     price: 250,
     capacity: 2,
@@ -148,7 +148,7 @@ export const apartments: Apartment[] = [
   },
   {
     id: 6,
-    name: 'Apartament nr 6',
+    name: 'apartmentsList.apartment6.name',
     descriptionKey: 'apartmentsList.apartment6.description',
     price: 250,
     capacity: 2,
