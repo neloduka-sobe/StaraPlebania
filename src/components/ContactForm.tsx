@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import emailjs from "emailjs-com";
 import { apartments } from '../data/apartments';
 
 const ContactForm: React.FC = () => {
@@ -25,51 +24,26 @@ const ContactForm: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    const serviceID = 'service_sdy660q';
-    const templateID = 'template_wv7hz06';
-    const publicKey = 'l0ibZKZJur9nrLMge';
-
-    if (!serviceID || !templateID || !publicKey) {
-      console.error("EmailJS credentials are missing.");
-      setFormStatus("error");
-      return;
-    }
-
-    const emailParams = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      apartment: formData.apartment,
-      guests: formData.guests,
-      message: formData.message,
-      checkInDate: checkInDate?.toISOString().split("T")[0] || "N/A",
-      checkOutDate: checkOutDate?.toISOString().split("T")[0] || "N/A",
-    };
-
-    try {
-      await emailjs.send(serviceID, templateID, emailParams, publicKey);
-      setFormStatus("success");
-
+    // Simulate form submission
+    setTimeout(() => {
+      setFormStatus('success');
+      // Reset form after success
       setTimeout(() => {
         setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          apartment: "",
+          name: '',
+          email: '',
+          phone: '',
+          apartment: '',
           guests: 1,
-          message: "",
+          message: ''
         });
         setCheckInDate(null);
         setCheckOutDate(null);
-        setFormStatus("idle");
+        setFormStatus('idle');
       }, 3000);
-    } catch (error) {
-      console.error("Failed to send email:", error);
-      setFormStatus("error");
-    }
+    }, 1000);
   };
 
   return (
