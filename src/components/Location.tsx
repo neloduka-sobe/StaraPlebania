@@ -54,7 +54,6 @@ const Location: React.FC = () => {
               style={{ border: 0 }} 
               allowFullScreen={false}
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
               title="Map"
               ></iframe>
             </div>

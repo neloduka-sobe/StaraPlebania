@@ -127,19 +127,19 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.privateBathroom', 'apartments.amenities.kitchenette', 'apartments.amenities.washingMachine', 'apartments.amenities.microwave', 'apartments.amenities.electricStove', 'apartments.amenities.kettle', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1630699144867-37acec97df5a',
+        src: 'https://images.unsplash.com/photo-1630699144867-37acec97df5a&auto=format&q=30',
         width: 1200,
         height: 800,
         alt: 'Cozy Studio overview'
       },
       {
-        src: 'https://images.unsplash.com/photo-1505693314120-0d443867891c',
+        src: 'https://images.unsplash.com/photo-1505693314120-0d443867891c&auto=format&q=30',
         width: 1200,
         height: 800,
         alt: 'Cozy Studio bed'
       },
       {
-        src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a',
+        src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a&auto=format&q=30',
         width: 1200,
         height: 800,
         alt: 'Cozy Studio bathroom'
