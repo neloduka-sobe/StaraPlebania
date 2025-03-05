@@ -4,6 +4,7 @@ import { X } from 'lucide-react';
 import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+import { useTranslation } from 'react-i18next';
 
 interface GalleryImage {
   src: string;
@@ -20,6 +21,7 @@ interface ApartmentGalleryProps {
 
 const ApartmentGallery: React.FC<ApartmentGalleryProps> = ({ images, onClose, title }) => {
   const [index, setIndex] = React.useState(-1);
+  const { t } = useTranslation();
 
   // Format images for PhotoAlbum
   const photos = images.map(img => ({
@@ -45,7 +47,7 @@ const ApartmentGallery: React.FC<ApartmentGalleryProps> = ({ images, onClose, ti
       >
         <div className="bg-white rounded-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto">
           <div className="p-4 border-b flex justify-between items-center">
-            <h3 className="text-xl font-bold">{title}</h3>
+            <h3 className="text-xl font-bold">{t(title)}</h3>
             <button 
               onClick={onClose}
               className="text-gray-500 hover:text-gray-700"
