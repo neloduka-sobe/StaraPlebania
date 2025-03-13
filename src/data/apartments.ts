@@ -11,25 +11,25 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware', 'apartments.amenities.microwave'],
     images: [
       {
-        src: 'https://github.com/neloduka-sobe/StaraPlebania/blob/main/assets/images/rooms/1/room_1_1.JPG?raw=true',
+        src: '/assets/images/rooms/1/room_1_1.JPG',
         width: 1200,
         height: 800,
         alt: 'Mountain View Suite living room'
       },
       {
-        src: 'https://github.com/neloduka-sobe/StaraPlebania/blob/main/assets/images/rooms/1/room_1_2.JPG?raw=true',
+        src: '/assets/images/rooms/1/room_1_2.JPG',
         width: 1200,
         height: 800,
         alt: 'Mountain View Suite bedroom'
       },
       {
-        src: 'https://github.com/neloduka-sobe/StaraPlebania/blob/main/assets/images/rooms/1/room_1_3.JPG?raw=true',
+        src: '/main/assets/images/rooms/1/room_1_3.JPG',
         width: 1200,
         height: 800,
         alt: 'Mountain View Suite bathroom'
       },
       {
-        src: 'https://github.com/neloduka-sobe/StaraPlebania/blob/main/assets/images/rooms/1/room_1_4.JPG?raw=true',
+        src: '/main/assets/images/rooms/1/room_1_4.JPG',
         width: 1200,
         height: 800,
         alt: 'Mountain View Suite Bathroom'
