@@ -277,7 +277,7 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.privateBathroom', 'apartments.amenities.kitchenette', 'apartments.amenities.washingMachine', 'apartments.amenities.microwave', 'apartments.amenities.electricStove', 'apartments.amenities.kettle', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1630699144867-37acec97df5',
+        src: 'https://placehold.co/1200x800/green/white?text=In+Renovation',
         width: 1200,
         height: 800,
         alt: 'In construction'
