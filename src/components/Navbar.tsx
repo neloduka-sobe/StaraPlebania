@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-lg bg-white/30 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#home" className="text-xl font-bold text-indigo-600">Stara Plebania</a>
+          <a href="#home" className="text-xl font-bold text-green-600">Stara Plebania</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
               <a 
                 key={link.href} 
                 href={link.href} 
-                className="text-gray-700 hover:text-indigo-600 transition-colors"
+                className="text-gray-700 hover:text-green-600 transition-colors"
               >
                 {link.label}
               </a>
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
             <div className="relative">
               <button 
                 onClick={toggleLanguages}
-                className="flex items-center text-gray-700 hover:text-indigo-600 transition-colors"
+                className="flex items-center text-gray-700 hover:text-green-600 transition-colors"
               >
                 <Globe size={20} className="mr-1" />
                 <span>{languages.find(lang => lang.code === i18n.language)?.flag}</span>
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
                       <button
                         key={language.code}
                         onClick={() => changeLanguage(language.code)}
-                        className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600"
+                        className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600"
                       >
                         <span className="mr-2">{language.flag}</span>
                         {language.name}
@@ -96,12 +96,12 @@ const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button 
               onClick={toggleLanguages}
-              className="text-gray-700 hover:text-indigo-600 transition-colors mr-4"
+              className="text-gray-700 hover:text-green-600 transition-colors mr-4"
               title="Mobile Menu Button"
             >
               <Globe size={20} />
             </button>
-            <button onClick={toggleMenu} className="text-gray-700 hover:text-indigo-600 transition-colors" title="Mobile Menu Button">
+            <button onClick={toggleMenu} className="text-gray-700 hover:text-green-600 transition-colors" title="Mobile Menu Button">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
                 <a 
                   key={link.href} 
                   href={link.href} 
-                  className="text-gray-700 hover:text-indigo-600 transition-colors"
+                  className="text-gray-700 hover:text-green-600 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
@@ -147,7 +147,7 @@ const Navbar: React.FC = () => {
                 <button
                   key={language.code}
                   onClick={() => changeLanguage(language.code)}
-                  className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600"
+                  className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
                 >
                   <span className="mr-2">{language.flag}</span>
                   {language.name}

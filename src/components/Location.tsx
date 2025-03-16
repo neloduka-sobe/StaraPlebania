@@ -79,7 +79,7 @@ const Location: React.FC = () => {
                     key={index} 
                     className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
                   >
-                    <div className="text-indigo-600 mb-3">{activity.icon}</div>
+                    <div className="text-green-600 mb-3">{activity.icon}</div>
                     <h4 className="font-semibold mb-1">{activity.title}</h4>
                     <p className="text-gray-500">{activity.distance}</p>
                   </div>
