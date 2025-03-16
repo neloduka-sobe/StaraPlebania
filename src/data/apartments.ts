@@ -46,22 +46,82 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.dishwasher', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-        width: 1200,
-        height: 800,
-        alt: 'Garden Retreat living area'
+        src: '/assets/images/rooms/2/room_2_1.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite living room'
       },
       {
-        src: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf',
-        width: 1200,
-        height: 800,
-        alt: 'Garden Retreat bedroom'
+        src: '/assets/images/rooms/2/room_2_2.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bedroom'
       },
       {
-        src: 'https://images.unsplash.com/photo-1584622781564-1d987f7333c1',
-        width: 1200,
-        height: 800,
-        alt: 'Garden Retreat bathroom'
+        src: '/assets/images/rooms/2/room_2_3.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_4.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_5.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_6.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_7.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_8.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_9.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite living room'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_10.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bedroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_11.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_12.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/2/room_2_13.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
       }
     ]
   },
@@ -75,22 +135,70 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688',
-        width: 1200,
-        height: 800,
-        alt: 'Urban Loft living space'
+        src: '/assets/images/rooms/3/room_3_1.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite living room'
       },
       {
-        src: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85',
-        width: 1200,
-        height: 800,
-        alt: 'Urban Loft bedroom'
+        src: '/assets/images/rooms/3/room_3_2.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bedroom'
       },
       {
-        src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a',
-        width: 1200,
-        height: 800,
-        alt: 'Urban Loft bathroom'
+        src: '/assets/images/rooms/3/room_3_3.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_4.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_5.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_6.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_7.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_8.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_9.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite living room'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_10.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bedroom'
+      },
+      {
+        src: '/assets/images/rooms/3/room_3_11.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
       }
     ]
   },
@@ -104,23 +212,59 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb',
-        width: 1200,
-        height: 800,
-        alt: 'Family Suite living room'
+        src: '/assets/images/rooms/4/room_4_1.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite living room'
       },
       {
-        src: 'https://images.unsplash.com/photo-1505693314120-0d443867891c',
-        width: 1200,
-        height: 800,
-        alt: 'Family Suite bedroom'
+        src: '/assets/images/rooms/4/room_4_2.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bedroom'
       },
       {
-        src: 'https://images.unsplash.com/photo-1584622781564-1d987f7333c1',
-        width: 1200,
-        height: 800,
-        alt: 'Family Suite bathroom'
-      }
+        src: '/assets/images/rooms/4/room_4_3.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_4.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_5.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_6.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_7.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_8.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_9.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite living room'
+      },
     ]
   },
   {
@@ -133,22 +277,10 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.privateBathroom', 'apartments.amenities.kitchenette', 'apartments.amenities.washingMachine', 'apartments.amenities.microwave', 'apartments.amenities.electricStove', 'apartments.amenities.kettle', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1630699144867-37acec97df5a&auto=format&q=30',
+        src: 'https://images.unsplash.com/photo-1630699144867-37acec97df5',
         width: 1200,
         height: 800,
-        alt: 'Cozy Studio overview'
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1505693314120-0d443867891c&auto=format&q=30',
-        width: 1200,
-        height: 800,
-        alt: 'Cozy Studio bed'
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a&auto=format&q=30',
-        width: 1200,
-        height: 800,
-        alt: 'Cozy Studio bathroom'
+        alt: 'In construction'
       }
     ]
   },
@@ -162,29 +294,35 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.privateBathroom', 'apartments.amenities.kettle', 'apartments.amenities.teaSet'],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
-        width: 1200,
-        height: 800,
-        alt: 'Penthouse living room'
+        src: '/assets/images/rooms/6/room_6_1.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite living room'
       },
       {
-        src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4',
-        width: 1200,
-        height: 800,
-        alt: 'Penthouse bedroom'
+        src: '/assets/images/rooms/6/room_6_2.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bedroom'
       },
       {
-        src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a',
-        width: 1200,
-        height: 800,
-        alt: 'Penthouse bathroom'
+        src: '/assets/images/rooms/6/room_6_3.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite bathroom'
       },
       {
-        src: 'https://images.unsplash.com/photo-1528913775512-624d24b27b96',
-        width: 1200,
-        height: 800,
-        alt: 'Penthouse terrace'
-      }
+        src: '/assets/images/rooms/6/room_6_4.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/6/room_6_5.JPG',
+        width: 675,
+        height: 900,
+        alt: 'Mountain View Suite Bathroom'
+      },
     ]
   }
 ];
