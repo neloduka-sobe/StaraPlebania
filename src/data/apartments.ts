@@ -12,26 +12,26 @@ export const apartments: Apartment[] = [
     images: [
       {
         src: '/assets/images/rooms/1/room_1_1.JPG',
-        width: 1200,
-        height: 800,
+        width: 675,
+        height: 900,
         alt: 'Mountain View Suite living room'
       },
       {
         src: '/assets/images/rooms/1/room_1_2.JPG',
-        width: 1200,
-        height: 800,
+        width: 675,
+        height: 900,
         alt: 'Mountain View Suite bedroom'
       },
       {
-        src: '/main/assets/images/rooms/1/room_1_3.JPG',
-        width: 1200,
-        height: 800,
+        src: '/assets/images/rooms/1/room_1_3.JPG',
+        width: 675,
+        height: 900,
         alt: 'Mountain View Suite bathroom'
       },
       {
-        src: '/main/assets/images/rooms/1/room_1_4.JPG',
-        width: 1200,
-        height: 800,
+        src: '/assets/images/rooms/1/room_1_4.JPG',
+        width: 675,
+        height: 900,
         alt: 'Mountain View Suite Bathroom'
       }
     ]
