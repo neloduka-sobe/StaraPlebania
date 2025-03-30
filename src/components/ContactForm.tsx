@@ -183,7 +183,7 @@ const ContactForm: React.FC = () => {
                       <option value="">-- {t('contact.apartment')} --</option>
                       {apartments.map(apt => (
                         <option key={apt.id} value={apt.id}>
-                          {t(apt.name)} ({apt.price}zł/{t('apartments.perNight')})
+                          {t(apt.name)} ({t('apartments.from')} {apt.price}zł/{t('apartments.perNight')})
                         </option>
                       ))}
                     </select>
