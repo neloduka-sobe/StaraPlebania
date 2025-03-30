@@ -41,14 +41,14 @@ const History: React.FC = () => {
             <div className="space-y-4">
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="/assets/images/historia1.png" 
+                  src="/assets/images/historia1.webp" 
                   alt="Historical building exterior" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="/assets/images/historia2.jpg" 
+                  src="/assets/images/historia2.webp" 
                   alt="Historical building interior" 
                   className="w-full h-full object-cover"
                 />
@@ -57,14 +57,14 @@ const History: React.FC = () => {
             <div className="space-y-4 mt-8">
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="/assets/images/historia3.jpg" 
+                  src="/assets/images/historia3.webp" 
                   alt="Historical building detail" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
                 <img 
-                  src="/assets/images/historia4.png" 
+                  src="/assets/images/historia4.webp" 
                   alt="Historical building renovation" 
                   className="w-full h-full object-cover"
                 />

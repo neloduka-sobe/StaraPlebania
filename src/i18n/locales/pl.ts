@@ -110,22 +110,22 @@ export default {
   apartmentsList: {
     apartment1: {
       name: 'Apartament nr 1',
-      description: 'Przestronny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+      description: 'Przestronny apartment z własną łazienką, aneksem kuchennym; składający się z pokoju dziennego i sypialni.',
       amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne', 'Kuchenka Mikrofalowa'],
     },
     apartment2: {
       name: 'Apartament nr 2',
-      description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+      description: 'Przestronny rodzinny apartment z własną łazienką, aneksem kuchennym; składający się z pokoju dziennego i sypialni.',
       amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Zmywarka', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
     },
     apartment3: {
       name: 'Apartament nr 3',
-      description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+      description: 'Przestronny rodzinny apartment z własną łazienką, aneksem kuchennym; składający się z pokoju dziennego i sypialni.',
       amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
     },
     apartment4: {
       name: 'Apartament nr 4',
-      description: 'Przestronny rodzinny apartment z własną łazienką, anaeksem kuchennym; składający się z pokoju dziennego i sypialni.',
+      description: 'Przestronny rodzinny apartment z własną łazienką, aneksem kuchennym; składający się z pokoju dziennego i sypialni.',
       amenities: ['Wi-Fi', 'Aneks Kuchenny', 'Lodówka', 'Prywatna Łazienka', 'Telewizor', 'Kuchenka Mikrofalowa', 'Czajnik', 'Kuchenka Elektryczna', 'Szafa', 'Przybory kuchenne'],
     },
     apartment5: {
