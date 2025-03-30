@@ -318,12 +318,6 @@ export const apartments: Apartment[] = [
         alt: 'Mountain View Suite Bathroom'
       },
       {
-        src: '/assets/images/rooms/6/room_6_5.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
         src: '/assets/images/rooms/6/room_6_6.webp',
         width: 5184,
         height: 2912,
