@@ -53,26 +53,26 @@ export const apartments: Apartment[] = [
     images: [
       {
         src: '/assets/images/rooms/2/room_2_1.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite living room'
       },
       {
         src: '/assets/images/rooms/2/room_2_2.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite bedroom'
       },
       {
         src: '/assets/images/rooms/2/room_2_3.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite bathroom'
       },
       {
         src: '/assets/images/rooms/2/room_2_4.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite Bathroom'
       },
       {
@@ -83,14 +83,14 @@ export const apartments: Apartment[] = [
       },
       {
         src: '/assets/images/rooms/2/room_2_6.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite bathroom'
       },
       {
         src: '/assets/images/rooms/2/room_2_7.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite Bathroom'
       },
       {
@@ -101,32 +101,32 @@ export const apartments: Apartment[] = [
       },
       {
         src: '/assets/images/rooms/2/room_2_9.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite living room'
       },
       {
         src: '/assets/images/rooms/2/room_2_10.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite bedroom'
       },
       {
         src: '/assets/images/rooms/2/room_2_11.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite bathroom'
       },
       {
         src: '/assets/images/rooms/2/room_2_12.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite Bathroom'
       },
       {
         src: '/assets/images/rooms/2/room_2_13.webp',
-        width: 675,
-        height: 900,
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite Bathroom'
       }
     ]
