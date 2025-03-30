@@ -52,7 +52,6 @@ const History: React.FC = () => {
                   src="/assets/images/historia2.webp" 
                   alt="Historical building interior" 
                   className="w-full h-full object-cover"
-                  loading="lazy"
                 />
               </div>
             </div>
@@ -62,7 +61,6 @@ const History: React.FC = () => {
                   src="/assets/images/historia3.webp" 
                   alt="Historical building detail" 
                   className="w-full h-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="rounded-lg overflow-hidden h-48 md:h-64">
@@ -70,7 +68,6 @@ const History: React.FC = () => {
                   src="/assets/images/historia4.webp" 
                   alt="Historical building renovation" 
                   className="w-full h-full object-cover"
-                  loading="lazy"
                 />
               </div>
             </div>
