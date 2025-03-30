@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
-// Path to your optimized image (manually optimize this image using a tool like Squoosh)
 const heroImagePath = '/assets/images/hero.webp';
 
 const Hero: React.FC = () => {
