@@ -11,24 +11,6 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware', 'apartments.amenities.microwave'],
     images: [
       {
-        src: '/assets/images/rooms/1/room_1_1.webp',
-        width: 5184,
-        height: 3456,
-        alt: 'Mountain View Suite bedrom'
-      },
-      {
-        src: '/assets/images/rooms/1/room_1_2.webp',
-        width: 5184,
-        height: 3456,
-        alt: 'Mountain View Suite living room'
-      },
-      {
-        src: '/assets/images/rooms/1/room_1_3.webp',
-        width: 2912,
-        height: 5184,
-        alt: 'Mountain View Suite kitchen'
-      },
-      {
         src: '/assets/images/rooms/1/room_1_4.webp',
         width: 675,
         height: 900,
