@@ -26,6 +26,7 @@ export default {
     capacity: 'Вместимость',
     size: 'Площадь',
     price: 'Цена',
+    from: 'от',
     perNight: 'за ночь',
     people: 'человек',
     sqm: 'м²',
