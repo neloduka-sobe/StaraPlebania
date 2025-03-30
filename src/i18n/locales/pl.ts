@@ -26,6 +26,7 @@ export default {
     capacity: 'Ilość osób',
     size: 'Powierzchnia',
     price: 'Cena',
+    from: 'od',
     perNight: 'za noc',
     people: 'osoby',
     sqm: 'm²',

@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: 'url(/assets/images/hero.jpg)',
+          backgroundImage: 'url(/assets/images/hero.webp)',
           backgroundPosition: 'center',
         }}
       >
