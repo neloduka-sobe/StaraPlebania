@@ -312,33 +312,39 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.privateBathroom', 'apartments.amenities.kettle', 'apartments.amenities.teaSet'],
     images: [
       {
-        src: '/assets/images/rooms/6/room_6_1.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/6/room_6_1.webp',
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite living room'
       },
       {
-        src: '/assets/images/rooms/6/room_6_2.JPG',
+        src: '/assets/images/rooms/6/room_6_2.webp',
         width: 675,
         height: 900,
         alt: 'Mountain View Suite bedroom'
       },
       {
-        src: '/assets/images/rooms/6/room_6_3.JPG',
+        src: '/assets/images/rooms/6/room_6_3.webp',
         width: 675,
         height: 900,
         alt: 'Mountain View Suite bathroom'
       },
       {
-        src: '/assets/images/rooms/6/room_6_4.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/6/room_6_4.webp',
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite Bathroom'
       },
       {
-        src: '/assets/images/rooms/6/room_6_5.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/6/room_6_5.webp',
+        width: 900,
+        height: 675,
+        alt: 'Mountain View Suite Bathroom'
+      },
+      {
+        src: '/assets/images/rooms/6/room_6_6.webp',
+        width: 5184,
+        height: 2912,
         alt: 'Mountain View Suite Bathroom'
       },
     ]
