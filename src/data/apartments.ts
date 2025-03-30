@@ -135,18 +135,6 @@ export const apartments: Apartment[] = [
         alt: 'Mountain View Suite bedroom'
       },
       {
-        src: '/assets/images/rooms/3/room_3_3.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite bathroom'
-      },
-      {
-        src: '/assets/images/rooms/3/room_3_4.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
         src: '/assets/images/rooms/3/room_3_5.webp',
         width: 900,
         height: 675,
@@ -157,18 +145,6 @@ export const apartments: Apartment[] = [
         width: 5184,
         height: 2912,
         alt: 'Mountain View Suite bathroom'
-      },
-      {
-        src: '/assets/images/rooms/3/room_3_7.webp',
-        width: 5184,
-        height: 2912,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
-        src: '/assets/images/rooms/3/room_3_8.webp',
-        width: 5184,
-        height: 2912,
-        alt: 'Mountain View Suite Bathroom'
       },
       {
         src: '/assets/images/rooms/3/room_3_9.webp',
@@ -200,28 +176,10 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: '/assets/images/rooms/4/room_4_1.webp',
-        width: 5184,
-        height: 2912,
-        alt: 'Mountain View Suite living room'
-      },
-      {
         src: '/assets/images/rooms/4/room_4_2.webp',
         width: 900,
         height: 675,
         alt: 'Mountain View Suite bedroom'
-      },
-      {
-        src: '/assets/images/rooms/4/room_4_3.webp',
-        width: 5184,
-        height: 2912,
-        alt: 'Mountain View Suite bathroom'
-      },
-      {
-        src: '/assets/images/rooms/4/room_4_4.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite Bathroom'
       },
       {
         src: '/assets/images/rooms/4/room_4_5.webp',
@@ -248,21 +206,9 @@ export const apartments: Apartment[] = [
         alt: 'Mountain View Suite Bathroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_9.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite living room'
-      },
-      {
         src: '/assets/images/rooms/4/room_4_10.webp',
         width: 900,
         height: 675,
-        alt: 'Mountain View Suite living room'
-      },
-      {
-        src: '/assets/images/rooms/4/room_4_11.webp',
-        width: 5184,
-        height: 2912,
         alt: 'Mountain View Suite living room'
       },
     ]
