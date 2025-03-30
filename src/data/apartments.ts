@@ -70,12 +70,6 @@ export const apartments: Apartment[] = [
         alt: 'Mountain View Suite bathroom'
       },
       {
-        src: '/assets/images/rooms/2/room_2_7.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
         src: '/assets/images/rooms/2/room_2_8.webp',
         width: 675,
         height: 900,
@@ -139,12 +133,6 @@ export const apartments: Apartment[] = [
         width: 900,
         height: 675,
         alt: 'Mountain View Suite Bathroom'
-      },
-      {
-        src: '/assets/images/rooms/3/room_3_6.webp',
-        width: 5184,
-        height: 2912,
-        alt: 'Mountain View Suite bathroom'
       },
       {
         src: '/assets/images/rooms/3/room_3_9.webp',
@@ -261,12 +249,6 @@ export const apartments: Apartment[] = [
         src: '/assets/images/rooms/6/room_6_4.webp',
         width: 900,
         height: 675,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
-        src: '/assets/images/rooms/6/room_6_6.webp',
-        width: 5184,
-        height: 2912,
         alt: 'Mountain View Suite Bathroom'
       },
     ]
