@@ -218,57 +218,69 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.microwave', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware'],
     images: [
       {
-        src: '/assets/images/rooms/4/room_4_1.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/4/room_4_1.webp',
+        width: 5184,
+        height: 2912,
         alt: 'Mountain View Suite living room'
       },
       {
-        src: '/assets/images/rooms/4/room_4_2.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/4/room_4_2.webp',
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite bedroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_3.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/4/room_4_3.webp',
+        width: 5184,
+        height: 2912,
         alt: 'Mountain View Suite bathroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_4.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/4/room_4_4.webp',
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite Bathroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_5.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/4/room_4_5.webp',
+        width: 5184,
+        height: 2912,
         alt: 'Mountain View Suite Bathroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_6.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/4/room_4_6.webp',
+        width: 900,
+        height: 675,
         alt: 'Mountain View Suite bathroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_7.JPG',
+        src: '/assets/images/rooms/4/room_4_7.webp',
         width: 675,
         height: 900,
         alt: 'Mountain View Suite Bathroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_8.JPG',
+        src: '/assets/images/rooms/4/room_4_8.webp',
         width: 675,
         height: 900,
         alt: 'Mountain View Suite Bathroom'
       },
       {
-        src: '/assets/images/rooms/4/room_4_9.JPG',
-        width: 675,
-        height: 900,
+        src: '/assets/images/rooms/4/room_4_9.webp',
+        width: 900,
+        height: 675,
+        alt: 'Mountain View Suite living room'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_10.webp',
+        width: 900,
+        height: 675,
+        alt: 'Mountain View Suite living room'
+      },
+      {
+        src: '/assets/images/rooms/4/room_4_11.webp',
+        width: 5184,
+        height: 2912,
         alt: 'Mountain View Suite living room'
       },
     ]
