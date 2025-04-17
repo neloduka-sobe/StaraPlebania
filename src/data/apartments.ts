@@ -11,16 +11,10 @@ export const apartments: Apartment[] = [
     amenities: ['apartments.amenities.wifi', 'apartments.amenities.kitchenette', 'apartments.amenities.fridge', 'apartments.amenities.privateBathroom', 'apartments.amenities.tv', 'apartments.amenities.kettle', 'apartments.amenities.electricStove', 'apartments.amenities.wardrobe', 'apartments.amenities.kitchenware', 'apartments.amenities.microwave'],
     images: [
       {
-        src: '/assets/images/rooms/1/room_1_4.webp',
-        width: 675,
-        height: 900,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
-        src: '/assets/images/rooms/1/room_1_5.webp',
-        width: 675,
-        height: 900,
-        alt: 'Mountain View Suite Bathroom'
+        src: 'https://placehold.co/1200x800/green/white?text=In+Renovation',
+        width: 1200,
+        height: 800,
+        alt: 'In construction'
       }
     ]
   },
@@ -52,18 +46,6 @@ export const apartments: Apartment[] = [
         alt: 'Mountain View Suite bathroom'
       },
       {
-        src: '/assets/images/rooms/2/room_2_4.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
-        src: '/assets/images/rooms/2/room_2_5.webp',
-        width: 675,
-        height: 900,
-        alt: 'Mountain View Suite Bathroom'
-      },
-      {
         src: '/assets/images/rooms/2/room_2_6.webp',
         width: 900,
         height: 675,
@@ -92,12 +74,6 @@ export const apartments: Apartment[] = [
         width: 900,
         height: 675,
         alt: 'Mountain View Suite bathroom'
-      },
-      {
-        src: '/assets/images/rooms/2/room_2_12.webp',
-        width: 900,
-        height: 675,
-        alt: 'Mountain View Suite Bathroom'
       },
       {
         src: '/assets/images/rooms/2/room_2_13.webp',
