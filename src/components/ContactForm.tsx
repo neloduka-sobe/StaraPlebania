@@ -183,7 +183,7 @@ const ContactForm: React.FC = () => {
                       <option value="">-- {t('contact.apartment')} --</option>
                       {apartments.map(apt => (
                         <option key={apt.id} value={apt.id}>
-                          {t(apt.name)} ({t('apartments.from')} {apt.price}zł/{t('apartments.perNight')})
+                          {t(apt.name)}
                         </option>
                       ))}
                     </select>
@@ -197,7 +197,7 @@ const ContactForm: React.FC = () => {
                     <DatePicker
                       id="checkIn"
                       selected={checkInDate}
-                      onChange={(date) => setCheckInDate(date)}
+                      onChange={(date) => setCheckInDate(date as Date | null)}
                       selectsStart
                       startDate={checkInDate}
                       endDate={checkOutDate}
@@ -216,7 +216,7 @@ const ContactForm: React.FC = () => {
                     <DatePicker
                       id="checkOut"
                       selected={checkOutDate}
-                      onChange={(date) => setCheckOutDate(date)}
+                      onChange={(date) => setCheckOutDate(date as Date | null)}
                       selectsEnd
                       startDate={checkInDate}
                       endDate={checkOutDate}
