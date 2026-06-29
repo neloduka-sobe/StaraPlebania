@@ -9,10 +9,16 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor': ['react', 'react-dom'],
-          'animations': ['framer-motion'],
-          'i18n': ['react-i18next', 'i18next']
+        manualChunks(id) {
+          if (id.includes('node_modules/react-i18next') || id.includes('node_modules/i18next')) {
+            return 'i18n'
+          }
+          if (id.includes('node_modules/framer-motion')) {
+            return 'animations'
+          }
+          if (id.includes('node_modules/react-dom') || id.includes('node_modules/react/')) {
+            return 'vendor'
+          }
         }
       }
     }

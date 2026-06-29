@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           alt={t('hero.imageAlt') || 'Luxury apartments'}
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
           onLoad={() => setImageLoaded(true)}
         />
         <div className="absolute inset-0 bg-black opacity-60"></div>
