@@ -1,4 +1,10 @@
 export default {
+  // Page title and description for search engines and link previews
+  meta: {
+    title: 'Stara Plebania — accommodation for active people in the Kaczawskie Mountains',
+    description: 'Stara Plebania in Pastewnik, Poland — apartments in a restored former rectory in the Kaczawskie Mountains. Cycling and hiking trails right outside the door. Book your stay on Booking.com.',
+  },
+
   // Navigation
   nav: {
     home: 'Home',
@@ -19,6 +25,7 @@ export default {
     subtitle: 'Accommodation for active people in the heart of Kaczawy',
     cta: 'Check availability',
     scroll: 'Scroll',
+    imageAlt: 'The restored Stara Plebania building in Pastewnik',
   },
 
   // Apartments section
@@ -79,6 +86,10 @@ export default {
     period1: "Rectory",
     period2: "History of Decline",
     period3: "New Life",
+    photo1: 'The rectory in Pastewnik in an old photograph',
+    photo2: 'The rectory among trees in a black-and-white photograph',
+    photo3: 'The courtyard and crumbling walls of the rectory before renovation',
+    photo4: 'Stara Plebania after renovation, seen from above',
   },
 
   // Booking section

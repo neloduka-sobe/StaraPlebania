@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
-import { restoreLanguage } from './i18n';
+import { languageFromPath, loadLanguage, restoreLanguage } from './i18n';
 import App from './App';
 import './index.css';
 
@@ -11,11 +11,15 @@ const app = (
   </StrictMode>
 );
 
-// Production HTML is prerendered (scripts/prerender.js); dev starts empty.
-if (root.hasChildNodes()) {
-  hydrateRoot(root, app);
-} else {
-  createRoot(root).render(app);
-}
+// Each language has its own prerendered page; load its translations
+// before hydrating so the markup matches.
+void loadLanguage(languageFromPath(location.pathname)).then(() => {
+  // Production HTML is prerendered (scripts/prerender.js); dev starts empty.
+  if (root.hasChildNodes()) {
+    hydrateRoot(root, app);
+  } else {
+    createRoot(root).render(app);
+  }
 
-restoreLanguage();
+  restoreLanguage();
+});

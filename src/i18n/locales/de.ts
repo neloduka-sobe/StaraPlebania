@@ -1,4 +1,10 @@
 export default {
+  // Page title and description for search engines and link previews
+  meta: {
+    title: 'Stara Plebania — Unterkunft für Aktive im Herzen des Bober-Katzbach-Gebirges',
+    description: 'Stara Plebania in Pastewnik, Polen — Ferienwohnungen in einem restaurierten ehemaligen Pfarrhaus im Bober-Katzbach-Gebirge. Rad- und Wanderwege direkt vor der Tür. Jetzt über Booking.com buchen.',
+  },
+
   // Navigation
   nav: {
     home: 'Startseite',
@@ -19,6 +25,7 @@ export default {
     subtitle: 'Unterkunft für Aktive im Herzen von Kaczawy',
     cta: 'Verfügbarkeit prüfen',
     scroll: 'Scrollen',
+    imageAlt: 'Das restaurierte Gebäude der Stara Plebania in Pastewnik',
   },
 
   // Apartments section
@@ -79,6 +86,10 @@ export default {
     period1: "Pfarrhaus",
     period2: "Geschichte des Verfalls",
     period3: "Neues Leben",
+    photo1: 'Das Pfarrhaus in Pastewnik auf einer alten Fotografie',
+    photo2: 'Das Pfarrhaus zwischen Bäumen auf einem Schwarzweißfoto',
+    photo3: 'Hof und verfallene Mauern des Pfarrhauses vor der Renovierung',
+    photo4: 'Stara Plebania nach der Renovierung von oben',
   },
 
   // Booking section

@@ -17,6 +17,9 @@ npm run deploy   # publish dist/ to GitHub Pages
 
 - Static files (photos, favicons, `CNAME`, `404.html`) live in `public/`.
 - Translations are in `src/i18n/locales/`; Polish is bundled, the others load on demand.
+- Each language is prerendered to its own URL (`/`, `/en/`, `/de/`, `/es/`, `/ru/`) with translated `<title>`,
+  description, hreflang links and schema.org data (`src/entry-server.tsx`). Page titles and descriptions are the
+  `meta` keys in each locale. If you add a language, add it to `public/sitemap.xml` too.
 - Contact details and the Booking.com link are in `src/site.ts`.
 - The rooms section (`src/components/Apartments.tsx`) is currently hidden — see `src/App.tsx`.
 - The Google map only loads when scrolled near (`src/components/LazyMap.tsx`) — it pulls ~500 KB of scripts.

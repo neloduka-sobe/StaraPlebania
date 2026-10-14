@@ -1,4 +1,10 @@
 export default {
+  // Page title and description for search engines and link previews
+  meta: {
+    title: 'Stara Plebania — nocleg dla aktywnych w sercu Kaczaw',
+    description: 'Stara Plebania w Pastewniku — apartamenty w odnowionej plebanii w Górach Kaczawskich. Trasy rowerowe i piesze tuż za progiem. Zarezerwuj pobyt przez Booking.com.',
+  },
+
   // Navigation
   nav: {
     home: 'Strona Główna',
@@ -19,6 +25,7 @@ export default {
     subtitle: 'Nocleg dla aktywnych w sercu Kaczaw',
     cta: 'Sprawdź dostępność',
     scroll: 'Przewiń',
+    imageAlt: 'Odnowiony budynek Starej Plebanii w Pastewniku',
   },
   
   // Apartments section
@@ -79,6 +86,10 @@ export default {
     period1: "Plebania",
     period2: "Historia Upadku",
     period3: "Nowe Życie",
+    photo1: 'Plebania w Pastewniku na dawnej fotografii',
+    photo2: 'Plebania wśród drzew na czarno-białym zdjęciu',
+    photo3: 'Podwórze i zniszczone mury plebanii przed remontem',
+    photo4: 'Stara Plebania po remoncie widziana z góry',
   },
   
   // Booking section

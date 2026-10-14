@@ -1,4 +1,10 @@
 export default {
+    // Page title and description for search engines and link previews
+    meta: {
+      title: 'Stara Plebania — alojamiento para viajeros activos en los montes Kaczawskie',
+      description: 'Stara Plebania en Pastewnik, Polonia — apartamentos en una antigua casa parroquial restaurada en los montes Kaczawskie. Rutas en bicicleta y de senderismo junto a la puerta. Reserva tu estancia en Booking.com.',
+    },
+
     // Navigation
     nav: {
       home: 'Inicio',
@@ -19,6 +25,7 @@ export default {
       subtitle: 'Alojamiento para personas activas en el corazón de Kaczawy',
       cta: 'Ver disponibilidad',
       scroll: 'Desplazar',
+      imageAlt: 'El edificio restaurado de Stara Plebania en Pastewnik',
     },
   
     // Apartments section
@@ -79,6 +86,10 @@ export default {
       period1: "Rectoría",
       period2: "Historia de la Decadencia",
       period3: "Nueva Vida",
+      photo1: 'La casa parroquial de Pastewnik en una fotografía antigua',
+      photo2: 'La casa parroquial entre árboles en una foto en blanco y negro',
+      photo3: 'El patio y los muros deteriorados de la casa parroquial antes de la renovación',
+      photo4: 'Stara Plebania tras la renovación, vista desde arriba',
     },
   
     // Booking section

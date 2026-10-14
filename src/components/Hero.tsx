@@ -15,7 +15,7 @@ const Hero = () => {
         sizes="100vw"
         width={1920}
         height={1281}
-        alt=""
+        alt={t('hero.imageAlt')}
         fetchPriority="high"
         decoding="async"
         className="absolute inset-0 -z-10 size-full object-cover"

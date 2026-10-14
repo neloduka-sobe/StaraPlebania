@@ -3,10 +3,10 @@ import SectionHeader from './SectionHeader';
 
 // `small` is a 360px copy for phones; the originals are untouched.
 const photos = [
-  { src: '/assets/images/historia1.webp', width: 476, height: 319, alt: 'Historical building exterior' },
-  { src: '/assets/images/historia2.webp', small: '/assets/images/historia2-360.webp', width: 950, height: 670, alt: 'Historical building interior' },
-  { src: '/assets/images/historia3.webp', small: '/assets/images/historia3-360.webp', width: 712, height: 499, alt: 'Historical building detail' },
-  { src: '/assets/images/historia4.webp', small: '/assets/images/historia4-360.webp', width: 605, height: 573, alt: 'Historical building renovation' },
+  { src: '/assets/images/historia1.webp', width: 476, height: 319, altKey: 'history.photo1' },
+  { src: '/assets/images/historia2.webp', small: '/assets/images/historia2-360.webp', width: 950, height: 670, altKey: 'history.photo2' },
+  { src: '/assets/images/historia3.webp', small: '/assets/images/historia3-360.webp', width: 712, height: 499, altKey: 'history.photo3' },
+  { src: '/assets/images/historia4.webp', small: '/assets/images/historia4-360.webp', width: 605, height: 573, altKey: 'history.photo4' },
 ];
 
 const timeline = [
@@ -15,19 +15,22 @@ const timeline = [
   { years: '2024', key: 'period3' },
 ];
 
-const Photo = ({ src, small, width, height, alt }: (typeof photos)[number]) => (
-  <img
-    src={src}
-    srcSet={small ? `${small} 360w, ${src} ${width}w` : undefined}
-    sizes={small ? '(min-width: 1024px) 280px, 45vw' : undefined}
-    width={width}
-    height={height}
-    alt={alt}
-    loading="lazy"
-    decoding="async"
-    className="h-48 w-full rounded-lg bg-rule object-cover md:h-64"
-  />
-);
+const Photo = ({ src, small, width, height, altKey }: (typeof photos)[number]) => {
+  const { t } = useTranslation();
+  return (
+    <img
+      src={src}
+      srcSet={small ? `${small} 360w, ${src} ${width}w` : undefined}
+      sizes={small ? '(min-width: 1024px) 280px, 45vw' : undefined}
+      width={width}
+      height={height}
+      alt={t(altKey)}
+      loading="lazy"
+      decoding="async"
+      className="h-48 w-full rounded-lg bg-rule object-cover md:h-64"
+    />
+  );
+};
 
 const History = () => {
   const { t } = useTranslation();

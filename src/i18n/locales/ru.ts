@@ -1,4 +1,10 @@
 export default {
+  // Page title and description for search engines and link previews
+  meta: {
+    title: 'Stara Plebania — жильё для активного отдыха в Качавских горах',
+    description: 'Stara Plebania в Пастевнике, Польша — апартаменты в отреставрированном бывшем доме пастора в Качавских горах. Велосипедные и пешие маршруты прямо у порога. Бронируйте на Booking.com.',
+  },
+
   // Navigation
   nav: {
     home: 'Главная',
@@ -19,6 +25,7 @@ export default {
     subtitle: 'Размещение для активных людей в сердце Качавы',
     cta: 'Проверить наличие мест',
     scroll: 'Прокрутить',
+    imageAlt: 'Отреставрированное здание Stara Plebania в Пастевнике',
   },
 
   // Apartments section
@@ -79,6 +86,10 @@ export default {
     period1: "Приходской дом",
     period2: "История упадка",
     period3: "Новая жизнь",
+    photo1: 'Дом пастора в Пастевнике на старой фотографии',
+    photo2: 'Дом пастора среди деревьев на чёрно-белом снимке',
+    photo3: 'Двор и разрушенные стены дома пастора до ремонта',
+    photo4: 'Stara Plebania после ремонта, вид сверху',
   },
 
   // Booking section
