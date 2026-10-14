@@ -1,34 +1,26 @@
-import React, { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import './i18n';
-
-// Components
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Apartments from './components/Apartments';
+import Booking from './components/Booking';
 import Location from './components/Location';
 import History from './components/History';
-import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+// Rooms section — hidden while reservations go through Booking.com.
+// The components and data are kept; uncomment both lines to bring it back.
+// import Apartments from './components/Apartments';
 
 function App() {
-  const { i18n } = useTranslation();
-
-  useEffect(() => {
-    // Set the html lang attribute when language changes
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
-
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       <Navbar />
-      <Hero />
-      <Apartments />
-      <Location />
-      <History />
-      <ContactForm />
+      <main>
+        <Hero />
+        <Booking />
+        {/* <Apartments /> */}
+        <Location />
+        <History />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

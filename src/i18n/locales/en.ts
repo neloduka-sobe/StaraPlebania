@@ -2,18 +2,23 @@ export default {
   // Navigation
   nav: {
     home: 'Home',
+    booking: 'Booking',
+    book: 'Book now',
     apartments: 'Apartments',
     location: 'Location',
     history: 'History',
-    contact: 'Contact'
+    contact: 'Contact',
+    label: 'Main navigation',
+    menu: 'Menu',
+    language: 'Language',
   },
 
   // Hero section
   hero: {
     title: 'Welcome to Stara Plebania!',
     subtitle: 'Accommodation for active people in the heart of Kaczawy',
-    cta: 'Discover our apartments!',
-    scroll: "Scroll"
+    cta: 'Check availability',
+    scroll: 'Scroll',
   },
 
   // Apartments section
@@ -52,6 +57,7 @@ export default {
   // Location section
   location: {
     title: 'Location',
+    mapTitle: 'Map to Stara Plebania',
     subtitle: 'Perfect place for an active holiday',
     description: 'The convenient location of Stara Plebania ensures that despite the proximity to many tourist, sports and recreational attractions, you will find peace here. Quick access to Jelenia Góra, Wałbrzych, Karpacz, Karkonosze, Czech Republic and many other locations makes both well-known and hidden gems of the Sudetes within easy reach.',
     activities: 'Nearby activities',
@@ -75,32 +81,22 @@ export default {
     period3: "New Life",
   },
 
-  // Contact form
-  contact: {
+  // Booking section
+  booking: {
     title: 'Book your stay',
-    subtitle: 'Let us know about your plans and we will find something perfect for you!',
-    name: 'Name and surname',
-    email: 'Email address',
-    phone: 'Phone number',
-    apartment: 'Choose apartment',
-    checkIn: 'Check-in date',
-    checkOut: 'Check-out date',
-    guests: 'Number of guests',
-    message: 'Additional Information',
-    submit: 'Send booking inquiry',
-    success: 'Thank you. Your inquiry has been sent!',
-    error: 'An error occurred, please try again.',
-    required: 'Field required',
-    thankYou: "Thank you!",
-    sending: "Sending"
+    lead: 'We take reservations through Booking.com. Pick your dates to see available apartments and current prices.',
+    checkIn: 'Check-in',
+    checkOut: 'Check-out',
+    guests: 'Guests',
+    invalidDates: 'Pick both dates — check-out has to be after check-in.',
+    note: 'Booking.com opens in a new tab.',
+    questions: 'Questions? Call or write to us:',
   },
 
   // Footer
   footer: {
     rights: 'All rights reserved',
-    address: 'Pastewnik 46 58-410 Marciszów',
-    phone: '+48 727 339 996',
-    email: 'staraplebania@stplebania.pl',
+    address: 'Pastewnik 46, 58-410 Marciszów',
     description: "Accommodation for active people in the heart of Kaczawy",
     callToAction: "Write to us!",
     navigation: "Navigation"

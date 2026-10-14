@@ -1,80 +1,43 @@
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
-import PhotoAlbum from 'react-photo-album';
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
-import { useTranslation } from 'react-i18next';
-
-interface GalleryImage {
-  src: string;
-  width: number;
-  height: number;
-  alt: string;
-}
+import type { Apartment } from '../types';
 
 interface ApartmentGalleryProps {
-  images: GalleryImage[];
-  onClose: () => void;
+  images: Apartment['images'];
   title: string;
+  onClose: () => void;
 }
 
-const ApartmentGallery: React.FC<ApartmentGalleryProps> = ({ images, onClose, title }) => {
-  const [index, setIndex] = React.useState(-1);
-  const { t } = useTranslation();
+// Native <dialog> gives focus trapping, Escape-to-close and a backdrop for free.
+const ApartmentGallery = ({ images, title, onClose }: ApartmentGalleryProps) => {
+  const ref = useRef<HTMLDialogElement>(null);
 
-  // Format images for PhotoAlbum
-  const photos = images.map(img => ({
-    src: img.src,
-    width: img.width,
-    height: img.height,
-    alt: img.alt
-  }));
-
-  // Format images for Lightbox
-  const slides = images.map(img => ({
-    src: img.src,
-    alt: img.alt
-  }));
+  useEffect(() => {
+    ref.current?.showModal();
+  }, []);
 
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
-      >
-        <div className="bg-white rounded-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-          <div className="p-4 border-b flex justify-between items-center">
-            <h3 className="text-xl font-bold">{t(title)}</h3>
-            <button 
-              onClick={onClose}
-              className="text-gray-500 hover:text-gray-700"
-            >
-              <X size={24} />
-            </button>
-          </div>
-          
-          <div className="p-4">
-            <PhotoAlbum
-              layout="rows"
-              photos={photos}
-              onClick={({ index }) => setIndex(index)}
-              spacing={8}
-              targetRowHeight={200}
-            />
-          </div>
-        </div>
-        
-        <Lightbox
-          open={index >= 0}
-          index={index}
-          close={() => setIndex(-1)}
-          slides={slides}
-        />
-      </motion.div>
-    </AnimatePresence>
+    <dialog
+      ref={ref}
+      onClose={onClose}
+      onClick={(e) => e.target === ref.current && ref.current.close()}
+      aria-label={title}
+      className="m-auto max-h-[90svh] w-[min(64rem,calc(100%-2rem))] overflow-y-auto rounded-lg bg-paper p-0 text-ink backdrop:bg-scrim/85"
+    >
+      <div className="sticky top-0 flex items-center justify-between border-b border-rule bg-paper px-5 py-4">
+        <h3 className="text-xl">{title}</h3>
+        <button type="button" onClick={() => ref.current?.close()} aria-label="Close" className="rounded-md p-1 text-ink-2 hover:text-ink">
+          <X size={24} aria-hidden="true" />
+        </button>
+      </div>
+      <div className="columns-1 gap-3 p-5 sm:columns-2 lg:columns-3">
+        {images.map((img) => (
+          <a key={img.src} href={img.src} target="_blank" rel="noopener" className="mb-3 block break-inside-avoid">
+            <img src={img.src} alt={img.alt} width={img.width} height={img.height} loading="lazy" decoding="async" className="w-full rounded-md" />
+          </a>
+        ))}
+      </div>
+    </dialog>
   );
 };
 

@@ -1,100 +1,92 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
+import { contact } from '../site';
 
-const InstagramIcon: React.FC<{ size?: number }> = ({ size = 20 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+// Lucide no longer ships brand logos, so these two are inline.
+const InstagramIcon = () => (
+  <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
     <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
   </svg>
 );
 
-const FacebookIcon: React.FC<{ size?: number }> = ({ size = 20 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+const FacebookIcon = () => (
+  <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
   </svg>
 );
 
-const Footer: React.FC = () => {
+const linkClass = 'transition-colors hover:text-on-photo';
+
+const Footer = () => {
   const { t } = useTranslation();
-  const currentYear = new Date().getFullYear();
+
+  const links = [
+    { href: '#home', label: t('nav.home') },
+    { href: '#booking', label: t('nav.booking') },
+    { href: '#location', label: t('nav.location') },
+    { href: '#history', label: t('nav.history') },
+  ];
 
   return (
-    <footer className="bg-gray-800 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Logo and Info */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Stara Plebania</h3>
-            <p className="text-gray-400 mb-4">
-              {t('footer.description')}
-            </p>
-            <div className="flex space-x-4">
-              <a href="https://www.instagram.com/staraplebania/" aria-label="Instagram Link" target="_blank" className="text-gray-400 hover:text-white transition-colors">
-                <InstagramIcon size={20} />
-              </a>
-              <a href="https://www.facebook.com/people/Stara-Plebania/61559207286890/" aria-label="Facebook Link" target="_blank" className="text-gray-400 hover:text-white transition-colors">
-                <FacebookIcon size={20} />
-              </a>
-            </div>
-          </div>
-          
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">{t('footer.callToAction')}</h3>
-            <div className="space-y-3">
-              <div className="flex items-start">
-                <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
-                <p className="text-gray-400">{t('footer.address')}</p>
-              </div>
-              <div className="flex items-center">
-                <Phone size={20} className="mr-3 flex-shrink-0" />
-                <p className="text-gray-400">{t('footer.phone')}</p>
-              </div>
-              <div className="flex items-center">
-                <Mail size={20} className="mr-3 flex-shrink-0" />
-                <p className="text-gray-400">{t('footer.email')}</p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">{t('footer.navigation')}</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#home" className="text-gray-400 hover:text-white transition-colors">
-                  {t('nav.home')}
-                </a>
-              </li>
-              <li>
-                <a href="#apartments" className="text-gray-400 hover:text-white transition-colors">
-                  {t('nav.apartments')}
-                </a>
-              </li>
-              <li>
-                <a href="#location" className="text-gray-400 hover:text-white transition-colors">
-                  {t('nav.location')}
-                </a>
-              </li>
-              <li>
-                <a href="#history" className="text-gray-400 hover:text-white transition-colors">
-                  {t('nav.history')}
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
-                  {t('nav.contact')}
-                </a>
-              </li>
-            </ul>
+    <footer id="contact" className="bg-night pt-16 pb-10 text-night-2 [&_:focus-visible]:outline-accent-light">
+      <div className="wrap grid gap-12 md:grid-cols-[minmax(0,4fr)_minmax(0,5fr)_minmax(0,3fr)]">
+        <div>
+          <p className="text-2xl font-bold text-on-photo">Stara Plebania</p>
+          <p className="mt-3">{t('footer.description')}</p>
+          <div className="mt-6 flex gap-4">
+            <a href={contact.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={linkClass}>
+              <InstagramIcon />
+            </a>
+            <a href={contact.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className={linkClass}>
+              <FacebookIcon />
+            </a>
           </div>
         </div>
-        
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Stara Plebania {t('footer.rights')}.</p>
+
+        <div>
+          <h2 className="text-xl text-on-photo">{t('footer.callToAction')}</h2>
+          <ul className="mt-4 space-y-3">
+            <li>
+              <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer" className={`flex gap-3 ${linkClass}`}>
+                <MapPin size={20} className="mt-0.5 shrink-0" aria-hidden="true" />
+                {t('footer.address')}
+              </a>
+            </li>
+            <li>
+              <a href={contact.phoneHref} className={`flex gap-3 ${linkClass}`}>
+                <Phone size={20} className="shrink-0" aria-hidden="true" />
+                <span className="tabular-nums">{contact.phone}</span>
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${contact.email}`} className={`flex min-w-0 gap-3 ${linkClass}`}>
+                <Mail size={20} className="shrink-0" aria-hidden="true" />
+                <span className="break-all">{contact.email}</span>
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <nav aria-label={t('footer.navigation')}>
+          <h2 className="text-xl text-on-photo">{t('footer.navigation')}</h2>
+          <ul className="mt-4 space-y-2">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className={linkClass}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      <div className="wrap mt-12">
+        <p className="border-t border-night-rule pt-8 text-center text-sm" suppressHydrationWarning>
+          © {new Date().getFullYear()} Stara Plebania. {t('footer.rights')}.
+        </p>
       </div>
     </footer>
   );

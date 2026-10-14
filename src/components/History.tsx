@@ -1,119 +1,76 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import SectionHeader from './SectionHeader';
 
-const History: React.FC = () => {
+// `small` is a 360px copy for phones; the originals are untouched.
+const photos = [
+  { src: '/assets/images/historia1.webp', width: 476, height: 319, alt: 'Historical building exterior' },
+  { src: '/assets/images/historia2.webp', small: '/assets/images/historia2-360.webp', width: 950, height: 670, alt: 'Historical building interior' },
+  { src: '/assets/images/historia3.webp', small: '/assets/images/historia3-360.webp', width: 712, height: 499, alt: 'Historical building detail' },
+  { src: '/assets/images/historia4.webp', small: '/assets/images/historia4-360.webp', width: 605, height: 573, alt: 'Historical building renovation' },
+];
+
+const timeline = [
+  { years: '? – 1946', key: 'period1' },
+  { years: '1946 – 2020', key: 'period2' },
+  { years: '2024', key: 'period3' },
+];
+
+const Photo = ({ src, small, width, height, alt }: (typeof photos)[number]) => (
+  <img
+    src={src}
+    srcSet={small ? `${small} 360w, ${src} ${width}w` : undefined}
+    sizes={small ? '(min-width: 1024px) 280px, 45vw' : undefined}
+    width={width}
+    height={height}
+    alt={alt}
+    loading="lazy"
+    decoding="async"
+    className="h-48 w-full rounded-lg bg-rule object-cover md:h-64"
+  />
+);
+
+const History = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="history" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-4"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            {t('history.title')}
-          </motion.h2>
-          <motion.p 
-            className="text-xl text-gray-600"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            {t('history.subtitle')}
-          </motion.p>
-        </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* History Images */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-2 gap-4"
-          >
+    <section id="history" className="pt-10 pb-20">
+      <div className="wrap">
+        <SectionHeader title={t('history.title')} subtitle={t('history.subtitle')} />
+
+        <div className="grid items-center gap-12 lg:grid-cols-[repeat(2,minmax(0,1fr))]">
+          <div className="grid grid-cols-[repeat(2,minmax(0,1fr))] gap-4">
             <div className="space-y-4">
-              <div className="rounded-lg overflow-hidden h-48 md:h-64">
-                <img 
-                  src="/assets/images/historia1.webp" 
-                  alt="Historical building exterior" 
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden h-48 md:h-64">
-                <img 
-                  src="/assets/images/historia2.webp" 
-                  alt="Historical building interior" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <Photo {...photos[0]} />
+              <Photo {...photos[1]} />
             </div>
-            <div className="space-y-4 mt-8">
-              <div className="rounded-lg overflow-hidden h-48 md:h-64">
-                <img 
-                  src="/assets/images/historia3.webp" 
-                  alt="Historical building detail" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden h-48 md:h-64">
-                <img 
-                  src="/assets/images/historia4.webp" 
-                  alt="Historical building renovation" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="mt-8 space-y-4">
+              <Photo {...photos[2]} />
+              <Photo {...photos[3]} />
             </div>
-          </motion.div>
-          
-          {/* History Text */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-white p-8 rounded-lg shadow-md"
-          >
-            <div className="space-y-6">
-              <p className="text-gray-600">
-                {t('history.paragraph1')}
-              </p>
-              <p className="text-gray-600">
-                {t('history.paragraph2')}
-              </p>
-              <p className="text-gray-600">
-                {t('history.paragraph3')}
-              </p>
-              
-              <div className="flex items-center">
-                <div className="h-px flex-1 bg-gray-200"></div>
-                <span className="px-4 text-gray-500 text-sm">? - 2025</span>
-                <div className="h-px flex-1 bg-gray-200"></div>
-              </div>
-              
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-green-600">? - 1946</div>
-                  <div className="text-gray-500 text-sm">{t('history.period1')}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-green-600">1946 - 2020</div>
-                  <div className="text-gray-500 text-sm">{t('history.period2')}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-green-600">2024</div>
-                  <div className="text-gray-500 text-sm">{t('history.period3')}</div>
-                </div>
-              </div>
+          </div>
+
+          <div className="card p-6 sm:p-8">
+            <div className="space-y-6 leading-relaxed text-ink-2">
+              <p>{t('history.paragraph1')}</p>
+              <p>{t('history.paragraph2')}</p>
+              <p>{t('history.paragraph3')}</p>
             </div>
-          </motion.div>
+
+            <div className="my-6 flex items-center" aria-hidden="true">
+              <div className="h-px flex-1 bg-rule" />
+              <span className="px-4 text-sm text-ink-2">? – 2025</span>
+              <div className="h-px flex-1 bg-rule" />
+            </div>
+
+            <ol className="grid gap-6 text-center sm:grid-cols-3 sm:gap-4">
+              {timeline.map(({ years, key }) => (
+                <li key={key}>
+                  <div className="text-2xl font-bold whitespace-nowrap text-accent tabular-nums lg:text-xl xl:text-2xl">{years}</div>
+                  <div className="mt-1 text-sm text-ink-2">{t(`history.${key}`)}</div>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
     </section>

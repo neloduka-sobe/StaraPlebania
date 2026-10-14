@@ -13,8 +13,3 @@ export interface Apartment {
     alt: string;
   }[];
 }
-export interface Language {
-  code: string;
-  name: string;
-  flag: string;
-}

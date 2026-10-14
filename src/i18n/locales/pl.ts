@@ -2,18 +2,23 @@ export default {
   // Navigation
   nav: {
     home: 'Strona Główna',
+    booking: 'Rezerwacja',
+    book: 'Zarezerwuj',
     apartments: 'Apartamenty',
     location: 'Lokalizacja',
     history: 'Historia',
-    contact: 'Kontakt'
+    contact: 'Kontakt',
+    label: 'Nawigacja główna',
+    menu: 'Menu',
+    language: 'Język',
   },
   
   // Hero section
   hero: {
     title: 'Witajcie w Starej Plebanii!',
     subtitle: 'Nocleg dla aktywnych w sercu Kaczaw',
-    cta: 'Odkryj nasze apartamenty!',
-    scroll: "Przewiń"
+    cta: 'Sprawdź dostępność',
+    scroll: 'Przewiń',
   },
   
   // Apartments section
@@ -52,6 +57,7 @@ export default {
   // Location section
   location: {
     title: 'Lokalizacja',
+    mapTitle: 'Mapa dojazdu do Starej Plebanii',
     subtitle: 'Perfekcyjne miejsce do aktywnego wypoczynku',
     description: 'Dogodna lokalizacja Starej Plebanii sprawia, że pomimo bliskości do wielu atrakcji turystycznych, sportowych i rekreacyjnych zaznają tu Państwo spokoju. Szybki dojazd do Jeleniej Góry, Wałbrzycha, Karpacza, Karkonoszy, Czech i wielu innych lokalizacji sprawia, że tak znane, jak i ukryte perły Sudetów są na wyciągnięcie ręki.',
     activities: 'Pobliskie aktywności',
@@ -75,32 +81,22 @@ export default {
     period3: "Nowe Życie",
   },
   
-  // Contact form
-  contact: {
+  // Booking section
+  booking: {
     title: 'Zarezerwuj swój pobyt',
-    subtitle: 'Daj nam znać o Twoich planach, a my znajdziemy coś idealnego dla Ciebie!',
-    name: 'Imię i nazwisko',
-    email: 'Adres email',
-    phone: 'Numer telefonu',
-    apartment: 'Wybierz apartament',
-    checkIn: 'Data zameldowania',
-    checkOut: 'Data wymeldowania',
-    guests: 'Ilość osób',
-    message: 'Dodatkowe Informacje',
-    submit: 'Wyślij zapytanie o rezerwację',
-    success: 'Dziękujemy. Twoje zapytanie zostało wysłane!',
-    error: 'Wystąpił błąd, proszę spróbuj ponownie.',
-    required: 'Pole wymagane',
-    thankYou: "Dziękujemy!",
-    sending: 'Wysyłanie'
+    lead: 'Rezerwacje prowadzimy przez Booking.com. Wybierz daty, a zobaczysz wolne apartamenty i aktualne ceny.',
+    checkIn: 'Przyjazd',
+    checkOut: 'Wyjazd',
+    guests: 'Liczba osób',
+    invalidDates: 'Wybierz obie daty — wyjazd musi być po przyjeździe.',
+    note: 'Otworzy się Booking.com w nowej karcie.',
+    questions: 'Masz pytania? Zadzwoń lub napisz:',
   },
   
   // Footer
   footer: {
     rights: 'Wszelkie prawa zastrzeżone',
-    address: 'Pastewnik 46 58-410 Marciszów',
-    phone: '+48 727 339 996',
-    email: 'staraplebania@stplebania.pl',
+    address: 'Pastewnik 46, 58-410 Marciszów',
     description: "Nocleg dla aktywnych w sercu Kaczaw",
     callToAction: "Napisz do nas!",
     navigation: "Nawigacja"

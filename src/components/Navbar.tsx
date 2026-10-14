@@ -1,163 +1,149 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Globe } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { languages } from '../i18n';
-import { Language } from '../types';
+import { Globe, Menu, X } from 'lucide-react';
+import { languages, setLanguage, type LanguageCode } from '../i18n';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [showLanguages, setShowLanguages] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const toggleLanguages = () => setShowLanguages(!showLanguages);
-
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-    setShowLanguages(false);
-  };
+  const langRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const navLinks = [
-    { href: '#home', label: t('nav.home') },
-    { href: '#apartments', label: t('nav.apartments') },
+  useEffect(() => {
+    if (!langOpen) return;
+    const onPointer = (e: PointerEvent) => {
+      if (!langRef.current?.contains(e.target as Node)) setLangOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setLangOpen(false);
+    document.addEventListener('pointerdown', onPointer);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onPointer);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [langOpen]);
+
+  const pickLanguage = (code: LanguageCode) => {
+    void setLanguage(code);
+    setLangOpen(false);
+    setMenuOpen(false);
+  };
+
+  const links = [
+    { href: '#booking', label: t('nav.booking') },
     { href: '#location', label: t('nav.location') },
     { href: '#history', label: t('nav.history') },
-    { href: '#contact', label: t('nav.contact') }
+    { href: '#contact', label: t('nav.contact') },
   ];
 
+  const solid = scrolled || menuOpen;
+  const current = languages.find((l) => l.code === i18n.language) ?? languages[0];
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-lg bg-white/30 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center">
-          <a href="#home" className="text-xl font-bold text-green-600">Stara Plebania</a>
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a 
-                key={link.href} 
-                href={link.href} 
-                className="text-gray-700 hover:text-green-600 transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-            
-            {/* Language Selector */}
-            <div className="relative">
-              <button 
-                onClick={toggleLanguages}
-                className="flex items-center text-gray-700 hover:text-green-600 transition-colors"
-              >
-                <Globe size={20} className="mr-1" />
-                <span>{languages.find(lang => lang.code === i18n.language)?.flag}</span>
-              </button>
-              
-              <AnimatePresence>
-                {showLanguages && (
-                  <motion.div 
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50"
-                  >
-                    {languages.map((language: Language) => (
-                      <button
-                        key={language.code}
-                        onClick={() => changeLanguage(language.code)}
-                        className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600"
-                      >
-                        <span className="mr-2">{language.flag}</span>
-                        {language.name}
-                      </button>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
-          
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
-            <button 
-              onClick={toggleLanguages}
-              className="text-gray-700 hover:text-green-600 transition-colors mr-4"
-              title="Mobile Menu Button"
-            >
-              <Globe size={20} />
-            </button>
-            <button onClick={toggleMenu} className="text-gray-700 hover:text-green-600 transition-colors" title="Mobile Menu Button">
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      {/* Mobile Navigation */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white"
-          >
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-              {navLinks.map((link) => (
-                <a 
-                  key={link.href} 
-                  href={link.href} 
-                  className="text-gray-700 hover:text-green-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
+    <header
+      className={`fixed inset-x-0 top-0 z-40 text-ink-2 backdrop-blur-lg transition-colors duration-200 ${
+        solid ? 'bg-paper shadow-md' : 'bg-paper/30'
+      }`}
+    >
+      <nav className="wrap flex h-16 items-center justify-between gap-4" aria-label={t('nav.label')}>
+        <a href="#home" className="text-xl font-bold whitespace-nowrap text-accent">
+          Stara Plebania
+        </a>
+
+        <div className="hidden items-center gap-7 md:flex">
+          <ul className="flex items-center gap-7">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="whitespace-nowrap transition-colors hover:text-accent">
                   {link.label}
                 </a>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-      
-      {/* Mobile Language Selector */}
-      <AnimatePresence>
-        {showLanguages && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t"
-          >
-            <div className="container mx-auto px-4 py-2">
-              {languages.map((language: Language) => (
-                <button
-                  key={language.code}
-                  onClick={() => changeLanguage(language.code)}
-                  className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
-                >
-                  <span className="mr-2">{language.flag}</span>
-                  {language.name}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
+              </li>
+            ))}
+          </ul>
+
+          <div className="relative" ref={langRef}>
+            <button
+              type="button"
+              onClick={() => setLangOpen((v) => !v)}
+              aria-expanded={langOpen}
+              aria-haspopup="true"
+              aria-label={t('nav.language')}
+              className="flex items-center gap-1.5 rounded-md px-2 py-1.5 transition-colors hover:text-accent"
+            >
+              <Globe size={18} aria-hidden="true" />
+              <span className="text-sm font-medium uppercase">{current.code}</span>
+            </button>
+            {langOpen && (
+              <ul className="absolute right-0 mt-2 w-44 overflow-hidden rounded-md border border-rule bg-paper py-1 text-ink shadow-lg">
+                {languages.map((lang) => (
+                  <li key={lang.code}>
+                    <button
+                      type="button"
+                      onClick={() => pickLanguage(lang.code)}
+                      aria-current={lang.code === current.code}
+                      className="flex w-full items-center gap-2 px-4 py-2 text-left hover:bg-accent-soft aria-[current=true]:font-semibold aria-[current=true]:text-accent"
+                    >
+                      <span aria-hidden="true">{lang.flag}</span>
+                      {lang.name}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <a href="#booking" className="btn btn-primary px-4 py-2 text-sm">
+            {t('nav.book')}
+          </a>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setMenuOpen((v) => !v)}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          aria-label={t('nav.menu')}
+          className="-mr-2 rounded-md p-2 transition-colors hover:text-accent md:hidden"
+        >
+          {menuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
+        </button>
+      </nav>
+
+      {menuOpen && (
+        <div id="mobile-menu" className="border-t border-rule md:hidden">
+          <ul className="wrap flex flex-col py-2">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} onClick={() => setMenuOpen(false)} className="block py-3 text-lg hover:text-accent">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="wrap flex flex-wrap gap-2 border-t border-rule py-4" role="group" aria-label={t('nav.language')}>
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                type="button"
+                onClick={() => pickLanguage(lang.code)}
+                aria-pressed={lang.code === current.code}
+                className="rounded-md border border-rule px-3 py-1.5 text-sm aria-pressed:border-accent aria-pressed:bg-accent-soft aria-pressed:text-accent-strong"
+              >
+                <span aria-hidden="true">{lang.flag}</span> {lang.code.toUpperCase()}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </header>
   );
 };
 
